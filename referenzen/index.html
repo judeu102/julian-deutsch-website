@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://julian-deutsch.de/referenzen/">
   <meta property="og:locale" content="de_DE">
-  <link rel="stylesheet" href="../styles.css?v=20260514-hero-overlay">
+  <link rel="stylesheet" href="../styles.css?v=20260514-gh-pages-fix">
 
   <script type="application/ld+json">
   {
@@ -31,6 +31,27 @@
       { "@type": "ListItem", "position": 2, "name": "Referenzen", "item": "https://julian-deutsch.de/referenzen/" }
     ]
   }
+  </script>
+  <script>
+    // GitHub-Pages Path-Rewriter: macht /foo/ zu /julian-deutsch-website/foo/
+    // Aktiviert sich NUR auf judeu102.github.io – bei localhost und custom domain passiert nichts
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
   </script>
 </head>
 <body>

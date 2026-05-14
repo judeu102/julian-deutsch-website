@@ -15,7 +15,28 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#0B1D3A">
-  <link rel="stylesheet" href="../styles.css?v=20260514-hero-overlay">
+  <link rel="stylesheet" href="../styles.css?v=20260514-gh-pages-fix">
+  <script>
+    // GitHub-Pages Path-Rewriter: macht /foo/ zu /julian-deutsch-website/foo/
+    // Aktiviert sich NUR auf judeu102.github.io – bei localhost und custom domain passiert nichts
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
 </head>
 <body>
 

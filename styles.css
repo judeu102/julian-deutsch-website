@@ -9,8 +9,8 @@
   font-style: normal;
   font-weight: 100 900;
   font-display: swap;
-  src: url('/fonts/inter-var.woff2') format('woff2-variations'),
-       url('/fonts/inter-var.woff2') format('woff2');
+  src: url('fonts/inter-var.woff2') format('woff2-variations'),
+       url('fonts/inter-var.woff2') format('woff2');
 }
 
 /* --- Reset & Base --- */
@@ -201,7 +201,7 @@ section {
 .logo {
   display: inline-block;
   /* Logo als Hintergrundbild – Text bleibt im DOM für Accessibility/SEO */
-  background-image: url('/logo-light.png');
+  background-image: url('logo-light.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
@@ -217,7 +217,7 @@ section {
 
 /* Logo im Footer: dunkle Variante */
 .footer .logo {
-  background-image: url('/logo-dark.png');
+  background-image: url('logo-dark.png');
 }
 
 @media (max-width: 768px) {
