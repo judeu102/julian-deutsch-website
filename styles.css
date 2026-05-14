@@ -1932,12 +1932,17 @@ section {
 @media (max-width: 1024px) {
   .page-hero-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
+  }
+
+  /* Text zuerst, Bild danach */
+  .page-hero-content {
+    order: 1;
   }
 
   .page-hero-image {
     justify-content: center;
-    order: -1;
+    order: 2;
   }
 
   .page-hero-image .hero-image-wrapper {
@@ -3065,12 +3070,17 @@ section {
 @media (max-width: 1024px) {
   .hero .container {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 32px;
+  }
+
+  /* Text zuerst, Bild danach (kein order-Override mehr) */
+  .hero-content {
+    order: 1;
   }
 
   .hero-image {
     justify-content: center;
-    order: -1;
+    order: 2;
   }
 
   .hero-image-wrapper {
