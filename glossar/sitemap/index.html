@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XML-Sitemap – Definition, Aufbau & Pflicht | Glossar</title>
+  <meta name="description" content="Was ist eine XML-Sitemap? Aufbau, Pflichtinhalte und wie du sie korrekt einreichst – verständlich erklärt.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://julian-deutsch.de/glossar/sitemap/">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="XML-Sitemap – Definition & Aufbau">
+  <meta property="og:description" content="Aufbau, Pflichtinhalte und Einreichung der XML-Sitemap.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://julian-deutsch.de/glossar/sitemap/">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="../../styles.css?v=20260514-final">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "XML-Sitemap",
+    "description": "Eine XML-Sitemap ist eine maschinenlesbare Liste aller indexierbaren Seiten einer Website.",
+    "url": "https://julian-deutsch.de/glossar/sitemap/",
+    "inDefinedTermSet": "https://julian-deutsch.de/glossar/"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://julian-deutsch.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Glossar", "item": "https://julian-deutsch.de/glossar/" },
+      { "@type": "ListItem", "position": 3, "name": "XML-Sitemap", "item": "https://julian-deutsch.de/glossar/sitemap/" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+            </div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/" class="active">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/seo-freelancer/">SEO Freelancer</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/glossar/">Glossar</a><span class="breadcrumb-sep">/</span><span>XML-Sitemap</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Glossar · Technisches SEO</span>
+        <h1>XML-Sitemap</h1>
+        <p class="page-hero-text">Die XML-Sitemap ist eines der einfachsten und gleichzeitig wichtigsten technischen <a href="/glossar/seo/">SEO</a>-Elemente. Sie sagt Google strukturiert: Diese Seiten gibt es auf meiner Domain – bitte crawlen und indexieren.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossar-detail">
+    <div class="container">
+      <div class="glossar-detail-layout">
+        <article class="glossar-content">
+          <h2>Was ist eine XML-Sitemap?</h2>
+          <p>Eine <strong>XML-Sitemap</strong> ist eine Datei im XML-Format, die alle relevanten URLs einer Website auflistet. Sie liegt typischerweise unter <code>/sitemap.xml</code> und ist maschinenlesbar – also speziell für Suchmaschinen-Crawler gemacht.</p>
+
+          <h2>Beispiel-Aufbau</h2>
+          <p>Eine einfache Sitemap-URL-Eintragung sieht so aus:</p>
+          <ul>
+            <li><strong>loc</strong>: die URL der Seite (Pflicht)</li>
+            <li><strong>lastmod</strong>: das Datum der letzten Änderung (empfohlen)</li>
+            <li><strong>changefreq</strong>: wie oft sich die Seite ändert (optional)</li>
+            <li><strong>priority</strong>: relative Wichtigkeit zwischen 0.0 und 1.0 (optional)</li>
+          </ul>
+
+          <h2>Warum ist eine Sitemap wichtig?</h2>
+          <ul>
+            <li>Google findet auch tief verschachtelte Seiten zuverlässig.</li>
+            <li>Bei großen Websites (1000+ Seiten) verbessert sie die Indexierungseffizienz.</li>
+            <li>Sie hilft Google, Aktualisierungen schneller zu erkennen.</li>
+            <li>Sie ist Pflichteingabe in der <a href="/glossar/google-search-console/">Google Search Console</a> für umfassende Indexierungs-Reports.</li>
+          </ul>
+
+          <h2>Was gehört in die Sitemap, was nicht?</h2>
+          <h3>Aufnehmen:</h3>
+          <ul>
+            <li>Alle Seiten, die in den Index sollen.</li>
+            <li>Kanonische URLs (siehe <a href="/glossar/canonical-tag/">Canonical Tag</a>).</li>
+            <li>Aktualisierte Inhalte mit korrektem <code>lastmod</code>.</li>
+          </ul>
+
+          <h3>Nicht aufnehmen:</h3>
+          <ul>
+            <li>Seiten mit Noindex-Tag.</li>
+            <li>Per <code>robots.txt</code> blockierte Seiten.</li>
+            <li>Duplicate-URLs (Filter, Sortierung, Tracking-Parameter).</li>
+            <li>404-, 5xx- oder weitergeleitete URLs.</li>
+            <li>Login-Bereiche, Warenkorb, technische URLs.</li>
+          </ul>
+
+          <h2>Sitemap-Limits</h2>
+          <ul>
+            <li>Maximal <strong>50.000 URLs</strong> pro Sitemap.</li>
+            <li>Maximal <strong>50 MB</strong> Dateigröße (unkomprimiert).</li>
+            <li>Bei größeren Sites: <strong>Sitemap-Index</strong> mit mehreren Sub-Sitemaps.</li>
+          </ul>
+
+          <h2>Wie reiche ich eine Sitemap ein?</h2>
+          <ol>
+            <li><strong>Sitemap erstellen</strong> – die meisten CMS (WordPress mit Yoast, Astro, Next.js) generieren sie automatisch.</li>
+            <li><strong>Auf Server hochladen</strong> – z.B. unter <code>https://deinedomain.de/sitemap.xml</code>.</li>
+            <li><strong>In <a href="/glossar/google-search-console/">Google Search Console</a> einreichen</strong> – Reiter „Sitemaps".</li>
+            <li><strong>In robots.txt referenzieren</strong>: <code>Sitemap: https://deinedomain.de/sitemap.xml</code>.</li>
+            <li><strong>Bing Webmaster Tools</strong> ebenfalls einrichten und Sitemap einreichen.</li>
+          </ol>
+
+          <h2>Spezial-Sitemaps</h2>
+          <ul>
+            <li><strong>News-Sitemap</strong> – für Nachrichteninhalte, mit Veröffentlichungsdatum.</li>
+            <li><strong>Image-Sitemap</strong> – wenn Bilder eigenständig in der Image Search ranken sollen.</li>
+            <li><strong>Video-Sitemap</strong> – für eingebettete Videos mit Metadaten.</li>
+          </ul>
+
+          <h2>Häufige Fehler</h2>
+          <ul>
+            <li>Sitemap enthält Noindex-Seiten (Widerspruchssignal).</li>
+            <li>Falsches <code>lastmod</code> auf jeder Seite (signalisiert Spam).</li>
+            <li>Sitemap nicht aktuell – neue Seiten fehlen wochenlang.</li>
+            <li>Sitemap nicht in robots.txt referenziert.</li>
+            <li>Mehrere widersprüchliche Sitemaps eingereicht.</li>
+          </ul>
+
+          <h2>Sitemap und Indexierung</h2>
+          <p>Wichtig zu verstehen: Eine Sitemap <strong>garantiert keine Indexierung</strong>. Sie ist eine Empfehlung an Google. Wenn Inhalte trotz Sitemap nicht indexiert werden, liegt es meist an mangelnder Qualität oder technischen Blockaden – nicht an der Sitemap selbst.</p>
+
+          <blockquote><strong>Kurz gesagt:</strong> Die Sitemap ist deine offizielle URL-Liste an Google. Pflichtaufgabe – aber kein Wundermittel.</blockquote>
+        </article>
+
+        <aside class="glossar-aside">
+          <div class="glossar-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/seo/">SEO</a></li>
+              <li><a href="/glossar/canonical-tag/">Canonical Tag</a></li>
+              <li><a href="/glossar/google-search-console/">Google Search Console</a></li>
+              <li><a href="/glossar/core-web-vitals/">Core Web Vitals</a></li>
+            </ul>
+          </div>
+          <div class="glossar-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+              <li><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a></li>
+              <li><a href="/ki-seo-geo/">KI-Content &amp; GEO</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Saubere technische Basis für nachhaltiges SEO</h2>
+      <p>Sitemap, Canonicals, Indexierung – ich richte deine technische SEO-Basis ein, damit nichts an Google vorbeigeht.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+4917361334300" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>Freiberuflicher Journalist und SEO Freelancer aus Essen – für Unternehmen, die mit starkem Content sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+4917361334300">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      navMobile.classList.toggle('open');
+      const isOpen = navMobile.classList.contains('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+  </script>
+</body>
+</html>
