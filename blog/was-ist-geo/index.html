@@ -24,7 +24,7 @@
   <meta property="article:published_time" content="2026-05-08">
   <meta property="article:author" content="Julian Deutsch">
   <meta property="article:section" content="KI & GEO">
-  <link rel="stylesheet" href="../../styles.css?v=20260514-final">
+  <link rel="stylesheet" href="../../styles.css?v=20260514-mobile">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -346,13 +346,25 @@
     const navToggle = document.getElementById('navToggle');
     const navMobile = document.getElementById('navMobile');
     navToggle.addEventListener('click', () => {
-      navMobile.classList.toggle('open');
-      const isOpen = navMobile.classList.contains('open');
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
       navToggle.setAttribute('aria-expanded', isOpen);
       const spans = navToggle.querySelectorAll('span');
       spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
       spans[1].style.opacity = isOpen ? '0' : '';
       spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
     });
   </script>
 </body>
