@@ -200,13 +200,14 @@ section {
 
 .logo {
   display: inline-block;
-  /* Logo als Hintergrundbild – Text bleibt im DOM für Accessibility/SEO */
-  background-image: url('logo-light.png');
+  /* JD-Favicon als Logo – Text bleibt im DOM für Accessibility/SEO */
+  background-image: url('favicon-512x512.png');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
-  width: 168px;
+  width: 44px;
   height: 44px;
+  border-radius: 8px;
   text-indent: -9999px;
   overflow: hidden;
   white-space: nowrap;
@@ -215,15 +216,15 @@ section {
   letter-spacing: 0;
 }
 
-/* Logo im Footer: dunkle Variante */
+/* Logo im Footer: gleiche Variante mit hellem Rand */
 .footer .logo {
-  background-image: url('logo-dark.png');
+  background-image: url('favicon-512x512.png');
 }
 
 @media (max-width: 768px) {
   .logo {
-    width: 144px;
-    height: 38px;
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -3073,7 +3074,7 @@ section {
     gap: 24px;
   }
 
-  /* Mobile-Reihenfolge: Kicker → Bild → H1 → Subtext → CTAs */
+  /* Mobile-Reihenfolge: Kicker → Bild → H1 (Overlay) → Subtext → CTAs */
   .hero .container {
     display: flex;
     flex-direction: column;
@@ -3090,15 +3091,24 @@ section {
     order: 1;
     align-self: flex-start;
   }
+  /* H1 sitzt visuell ueber dem unteren Drittel des Bildes (nicht im Gesicht) */
   .hero-content > h1 {
     order: 3;
     font-size: clamp(1.875rem, 7.5vw, 2.6rem);
     line-height: 1.12;
     letter-spacing: -0.025em;
-    margin: -24px 0 8px;
+    margin: -150px 0 24px;
+    padding: 16px 12px 0;
     text-align: left;
     position: relative;
     z-index: 2;
+    /* Sanfter weisser Verlauf hinter dem Text, damit er lesbar bleibt */
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.85) 30%,
+      rgba(255, 255, 255, 0.98) 100%
+    );
   }
   .hero-content > .hero-text {
     order: 4;
@@ -3111,10 +3121,10 @@ section {
     max-width: 420px;
   }
 
-  /* Sanfter Bildauslauf nach unten, damit das Bild in die H1 fließt */
+  /* Bild ohne Maskierung – H1 ueberlagert untere Bildhaelfte */
   .hero-image-wrapper img {
-    -webkit-mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 75%, transparent 100%);
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
   .hero {
