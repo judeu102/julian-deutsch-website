@@ -3098,35 +3098,35 @@ section {
     max-width: 420px;
   }
 
-  /* Maskierung des Bildes auf Mobile zurücknehmen – sonst frisst sie den Overlay-Hintergrund */
+  /* Maskierung des Bildes auf Mobile entfernen – Text liegt jetzt unten am Bild */
   .hero-image-wrapper img {
-    -webkit-mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
+    -webkit-mask-image: none;
+    mask-image: none;
   }
 
-  /* Overlay anzeigen */
+  /* Overlay am unteren Bildrand anzeigen, damit der Kopf frei bleibt */
   .hero-image-overlay {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     right: 0;
-    padding: 28px 24px 60px;
+    padding: 80px 24px 24px;
     z-index: 2;
     text-align: left;
     background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.7) 60%,
+      to top,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(255, 255, 255, 0.85) 45%,
       rgba(255, 255, 255, 0) 100%
     );
   }
 
   .hero-overlay-headline {
-    font-size: clamp(1.75rem, 6vw, 2.5rem);
-    line-height: 1.15;
+    font-size: clamp(1.5rem, 5.2vw, 2.1rem);
+    line-height: 1.2;
     letter-spacing: -0.02em;
     margin: 0;
     color: var(--color-primary);
