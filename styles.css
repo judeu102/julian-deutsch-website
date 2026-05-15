@@ -3113,7 +3113,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 80px 24px 24px;
+    padding: 90px 12px 20px;
     z-index: 2;
     text-align: left;
     background: linear-gradient(
@@ -3125,9 +3125,9 @@ section {
   }
 
   .hero-overlay-headline {
-    font-size: clamp(1.5rem, 5.2vw, 2.1rem);
-    line-height: 1.2;
-    letter-spacing: -0.02em;
+    font-size: clamp(1.875rem, 7vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
     margin: 0;
     color: var(--color-primary);
     font-weight: 700;
