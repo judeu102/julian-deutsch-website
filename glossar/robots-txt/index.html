@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>robots.txt – Crawler-Steuerung für Suchmaschinen | Glossar</title>
+  <meta name="description" content="Die robots.txt ist eine Textdatei im Root-Verzeichnis einer Website, die Suchmaschinen-Crawlern Anweisungen gibt, welche Bereiche sie crawlen dürfen.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://juliandeutsch.de/glossar/robots-txt/">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="robots.txt – Crawler-Steuerung für Suchmaschinen | Glossar">
+  <meta property="og:description" content="Die robots.txt ist eine Textdatei im Root-Verzeichnis einer Website, die Suchmaschinen-Crawlern Anweisungen gibt, welche Bereiche sie crawlen dürfen.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://juliandeutsch.de/glossar/robots-txt/">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="../../styles.css?v=20260601-glossar-expand">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "robots.txt",
+  "description": "Die robots.txt ist eine Textdatei im Root-Verzeichnis einer Website, die Suchmaschinen-Crawlern Anweisungen gibt, welche Bereiche sie crawlen dürfen.",
+  "url": "https://juliandeutsch.de/glossar/robots-txt/",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "SEO-Glossar Julian Deutsch",
+    "url": "https://juliandeutsch.de/glossar/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Glossar",
+      "item": "https://juliandeutsch.de/glossar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "robots.txt",
+      "item": "https://juliandeutsch.de/glossar/robots-txt/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Brauche ich eine robots.txt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eigentlich nein. Eine fehlende robots.txt erlaubt allen Crawlern alles. Aber: Wer Filter-URLs, Staging oder Admin-Bereiche aus dem Crawling halten will, sollte eine pflegen. Auch der Sitemap-Verweis ist sinnvoll."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kann ich Google komplett aussperren?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, mit <code>User-agent: Googlebot</code> + <code>Disallow: /</code>. Das ist aber selten gewollt – die Folge wäre vollständiger Sichtbarkeits-Verlust."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie unterscheidet sich robots.txt von der Sitemap?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die robots.txt sagt, was NICHT gecrawlt werden soll. Die XML-Sitemap sagt, was IDEALERWEISE gecrawlt werden soll. Beide ergänzen sich – die robots.txt verweist üblicherweise auf die Sitemap."
+      }
+    }
+  ]
+}
+  </script>
+  <script>
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/" class="active">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/glossar/">Glossar</a><span class="breadcrumb-sep">/</span><span>robots.txt</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Glossar · Technisches SEO</span>
+        <h1>robots.txt – Steuerung für Suchmaschinen-Crawler</h1>
+        <p class="page-hero-text">Die robots.txt liegt im Root-Verzeichnis einer Website und gibt Suchmaschinen-Crawlern Anweisungen, welche Bereiche sie crawlen oder ignorieren sollen. Sie ist eine der ältesten Standards des Webs – und immer noch zentral für technisches SEO.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossar-detail">
+    <div class="container">
+      <div class="glossar-detail-layout">
+        <article class="glossar-content">
+          <h2>Was ist die robots.txt?</h2>
+          <p>Die <strong>robots.txt</strong> ist eine einfache Textdatei, die unter der URL <code>deinedomain.de/robots.txt</code> liegt. Sie folgt dem <strong>Robots Exclusion Standard</strong> und gibt Suchmaschinen-Crawlern wie dem Googlebot oder Bingbot Anweisungen, welche Teile der Website sie <a href="/glossar/crawling/">crawlen</a> dürfen.</p>
+          <p>Wichtig: Die robots.txt verhindert nur das Crawling, nicht die <a href="/glossar/indexierung/">Indexierung</a>. Wenn andere Seiten auf eine gesperrte URL verlinken, kann Google sie trotzdem in den Index aufnehmen – nur ohne Inhalt.</p>
+
+          <h2>Aufbau einer robots.txt</h2>
+          <p>Eine minimale, gültige robots.txt sieht so aus:</p>
+          <pre><code>User-agent: *
+Allow: /
+
+Sitemap: https://deinedomain.de/sitemap.xml</code></pre>
+          <p>Erklärung der Direktiven:</p>
+          <ul>
+            <li><strong>User-agent:</strong> An welchen Bot richten sich die folgenden Anweisungen? <code>*</code> = alle</li>
+            <li><strong>Disallow:</strong> Welche Pfade dürfen nicht gecrawlt werden?</li>
+            <li><strong>Allow:</strong> Welche Pfade explizit doch (innerhalb gesperrter Bereiche)?</li>
+            <li><strong>Sitemap:</strong> Wo liegt die <a href="/glossar/sitemap/">XML-Sitemap</a>?</li>
+          </ul>
+
+          <h2>Typische Anwendungsfälle</h2>
+          <ul>
+            <li><strong>Filter- und Such-URLs sperren</strong>: <code>Disallow: /?filter=</code> – verhindert das Crawling unendlich vieler URL-Varianten</li>
+            <li><strong>Interne Suchergebnisse ausschließen</strong>: <code>Disallow: /search</code> – kein <a href="/glossar/crawling/">Crawl Budget</a> für irrelevante Seiten</li>
+            <li><strong>Admin-Bereiche schützen</strong>: <code>Disallow: /admin/</code> – nicht für die Suche relevant</li>
+            <li><strong>Staging-Umgebungen sperren</strong>: <code>Disallow: /</code> in einer separaten robots.txt der Subdomain</li>
+            <li><strong>Bilder oder PDFs vom Crawling ausnehmen</strong>: <code>Disallow: /private/*.pdf</code></li>
+          </ul>
+
+          <h2>robots.txt vs. noindex</h2>
+          <p>Häufige Verwechslung:</p>
+          <ul>
+            <li><strong>robots.txt Disallow</strong>: Crawler darf die Seite nicht abrufen. Sie kann trotzdem indexiert sein (ohne Inhalt).</li>
+            <li><strong>noindex (Meta-Robots-Tag)</strong>: Seite wird gecrawlt, aber nicht in den Index aufgenommen.</li>
+          </ul>
+          <p>Faustregel: Wenn du eine Seite definitiv aus den Suchergebnissen halten willst, nutze <strong>noindex</strong>. robots.txt ist für Crawl-Effizienz, nicht für Sichtbarkeitssteuerung.</p>
+
+          <h2>robots.txt testen</h2>
+          <p>Die <a href="/glossar/google-search-console/">Google Search Console</a> bietet einen robots.txt-Tester. Damit lässt sich prüfen, ob bestimmte URLs durch die aktuelle robots.txt blockiert werden – und für welche User-Agents.</p>
+
+          <h2>Was bedeutet llms.txt?</h2>
+          <p>Mit dem Aufstieg von <a href="/glossar/llm/">LLM</a>-basierten Suchsystemen kam ein neuer Standard auf: die <a href="/glossar/llms-txt/">llms.txt</a>. Sie ist das Pendant zur robots.txt für KI-Crawler – und gibt Hinweise, welche Inhalte für KI-Modelle besonders relevant sind.</p>
+
+          <div class="glossar-faq">
+            <h2>Häufige Fragen</h2>
+            <h3>Brauche ich eine robots.txt?</h3>
+            <p>Eigentlich nein. Eine fehlende robots.txt erlaubt allen Crawlern alles. Aber: Wer Filter-URLs, Staging oder Admin-Bereiche aus dem Crawling halten will, sollte eine pflegen. Auch der Sitemap-Verweis ist sinnvoll.</p>
+            <h3>Kann ich Google komplett aussperren?</h3>
+            <p>Ja, mit <code>User-agent: Googlebot</code> + <code>Disallow: /</code>. Das ist aber selten gewollt – die Folge wäre vollständiger Sichtbarkeits-Verlust.</p>
+            <h3>Wie unterscheidet sich robots.txt von der Sitemap?</h3>
+            <p>Die robots.txt sagt, was NICHT gecrawlt werden soll. Die XML-Sitemap sagt, was IDEALERWEISE gecrawlt werden soll. Beide ergänzen sich – die robots.txt verweist üblicherweise auf die Sitemap.</p>
+          </div>
+
+          <blockquote>
+            <strong>Kurz gesagt:</strong> Die robots.txt ist das einfachste technische SEO-Werkzeug – und wird oft falsch eingesetzt. Sie steuert Crawling, nicht Sichtbarkeit.
+          </blockquote>
+        </article>
+
+        <aside class="glossar-aside">
+          <div class="glossar-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/crawling/">Crawling</a></li>
+              <li><a href="/glossar/indexierung/">Indexierung</a></li>
+              <li><a href="/glossar/sitemap/">XML-Sitemap</a></li>
+              <li><a href="/glossar/llms-txt/">llms.txt</a></li>
+              <li><a href="/glossar/google-search-console/">Google Search Console</a></li>
+              <li><a href="/glossar/seo/">SEO</a></li>
+            </ul>
+          </div>
+          <div class="glossar-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+              <li><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a></li>
+              <li><a href="/ki-seo-geo/">KI-Content &amp; GEO</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Bereit für nachhaltige Sichtbarkeit?</h2>
+      <p>Lass uns sprechen, wie SEO dein Unternehmen messbar nach vorne bringt.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+4917361334300" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>Freiberuflicher Journalist und SEO Freelancer aus Essen – für Unternehmen, die mit starkem Content sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+4917361334300">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

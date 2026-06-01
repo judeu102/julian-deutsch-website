@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crawling – Wie Suchmaschinen-Bots das Web durchsuchen | Glossar</title>
+  <meta name="description" content="Crawling ist der Prozess, bei dem Suchmaschinen-Bots (z. B. Googlebot) Webseiten besuchen, deren Inhalte lesen und für die Indexierung vorbereiten.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://juliandeutsch.de/glossar/crawling/">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="Crawling – Wie Suchmaschinen-Bots das Web durchsuchen | Glossar">
+  <meta property="og:description" content="Crawling ist der Prozess, bei dem Suchmaschinen-Bots (z. B. Googlebot) Webseiten besuchen, deren Inhalte lesen und für die Indexierung vorbereiten.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://juliandeutsch.de/glossar/crawling/">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="../../styles.css?v=20260601-glossar-expand">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Crawling",
+  "description": "Crawling ist der Prozess, bei dem Suchmaschinen-Bots (z. B. Googlebot) Webseiten besuchen, deren Inhalte lesen und für die Indexierung vorbereiten.",
+  "url": "https://juliandeutsch.de/glossar/crawling/",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "SEO-Glossar Julian Deutsch",
+    "url": "https://juliandeutsch.de/glossar/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Glossar",
+      "item": "https://juliandeutsch.de/glossar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Crawling",
+      "item": "https://juliandeutsch.de/glossar/crawling/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie oft crawlt Google meine Website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das hängt von Größe, Aktualität und Autorität ab. Eine aktive Newsseite wird mehrmals täglich gecrawlt, ein kleiner Unternehmensblog vielleicht alle paar Tage. Die genauen Zahlen siehst du in der Google Search Console unter „Crawl-Statistik”."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der Unterschied zwischen Crawling und Indexierung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Crawling ist das Abrufen der Seite, Indexierung ist die Aufnahme in den Suchmaschinen-Index. Eine Seite kann gecrawlt, aber nicht indexiert werden – z. B. wenn sie ein noindex-Tag enthält oder als Duplicate Content gilt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie blockiere ich Crawler komplett?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über die robots.txt-Datei kannst du gesamte Bereiche oder einzelne Bots ausschließen. Für einzelne Seiten ist ein noindex-Meta-Tag besser – die Seite wird dann zwar gecrawlt, aber nicht indexiert."
+      }
+    }
+  ]
+}
+  </script>
+  <script>
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/" class="active">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/glossar/">Glossar</a><span class="breadcrumb-sep">/</span><span>Crawling</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Glossar · Technisches SEO</span>
+        <h1>Crawling – Wie Suchmaschinen das Web entdecken</h1>
+        <p class="page-hero-text">Crawling ist die erste Stufe jeder Suchmaschinen-Arbeit: Bots (Crawler, Spider) folgen Links durch das Web, lesen Inhalte aus und bereiten sie für die Indexierung vor. Ohne erfolgreiches Crawling keine Sichtbarkeit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossar-detail">
+    <div class="container">
+      <div class="glossar-detail-layout">
+        <article class="glossar-content">
+          <h2>Was bedeutet Crawling?</h2>
+          <p><strong>Crawling</strong> ist der automatisierte Prozess, mit dem Suchmaschinen wie Google das Web systematisch durchsuchen. Ein Programm – der <strong>Crawler</strong> oder <strong>Spider</strong>, bei Google der <em>Googlebot</em> – ruft Webseiten ab, liest den HTML-Code, folgt allen Links und speichert die gefundenen Inhalte temporär ab, bevor sie zur <a href="/glossar/indexierung/">Indexierung</a> weitergegeben werden.</p>
+          <p>Crawling ist die Vorstufe jeder SEO-Aktivität. Eine Seite, die nicht gecrawlt wird, kann nicht indexiert werden – und ohne Indexierung gibt es keine Rankings.</p>
+
+          <h2>Wie funktioniert Crawling?</h2>
+          <p>Vereinfachter Ablauf:</p>
+          <ol>
+            <li>Crawler startet mit einer Liste bekannter URLs (Seed-URLs)</li>
+            <li>Ruft jede URL auf und lädt den HTML-Code</li>
+            <li>Findet im HTML weitere Links – externe und interne</li>
+            <li>Fügt neue, unbekannte URLs der Crawl-Queue hinzu</li>
+            <li>Respektiert dabei die Anweisungen aus <a href="/glossar/robots-txt/">robots.txt</a> und Meta-Robots-Tags</li>
+            <li>Übergibt die gelesenen Inhalte an die Indexierungs-Pipeline</li>
+          </ol>
+
+          <h2>Welche Faktoren beeinflussen Crawling?</h2>
+          <ul>
+            <li><strong>Interne Verlinkung</strong>: gut verlinkte Seiten werden häufiger gecrawlt</li>
+            <li><strong>XML-Sitemap</strong>: die <a href="/glossar/sitemap/">Sitemap</a> hilft Google, neue oder schwer auffindbare Seiten zu entdecken</li>
+            <li><strong>Server-Performance</strong>: langsame Server reduzieren die Crawl-Frequenz</li>
+            <li><strong>robots.txt</strong>: kann ganze Bereiche vom Crawling ausschließen</li>
+            <li><strong>Crawl-Budget</strong>: bei großen Websites limitiert Google die Anzahl gecrawlter Seiten pro Tag</li>
+            <li><strong>Externe Verlinkung</strong>: <a href="/glossar/backlink/">Backlinks</a> erhöhen Crawl-Frequenz und -Tiefe</li>
+          </ul>
+
+          <h2>Crawl Budget – relevant für große Sites</h2>
+          <p>Google hat begrenzte Ressourcen und entscheidet pro Domain, wie viele Seiten und wie oft sie gecrawlt werden. Für kleine Websites (unter 1.000 Seiten) ist das kein Thema. Bei großen E-Commerce-Shops oder News-Portalen wird das <strong>Crawl Budget</strong> jedoch zum Engpass.</p>
+          <p>Maßnahmen zur Crawl-Budget-Optimierung:</p>
+          <ul>
+            <li>Duplicate Content vermeiden – z. B. via <a href="/glossar/canonical-tag/">Canonical Tags</a></li>
+            <li>404-Seiten und Redirect-Ketten minimieren</li>
+            <li>Wichtige Seiten in der XML-Sitemap priorisieren</li>
+            <li>Server-Performance erhöhen (schneller = mehr Crawls pro Tag)</li>
+            <li>Unwichtige Bereiche (Filter, Suchergebnisse) über robots.txt sperren</li>
+          </ul>
+
+          <h2>Wie sehe ich, wie Google meine Seite crawlt?</h2>
+          <p>Die <a href="/glossar/google-search-console/">Google Search Console</a> liefert die wichtigsten Daten:</p>
+          <ul>
+            <li><strong>Crawl-Statistiken</strong>: Anzahl Crawls pro Tag, Server-Antwortzeiten</li>
+            <li><strong>URL-Prüfung</strong>: zeigt für einzelne URLs den letzten Crawl, Indexierungs-Status, evtl. Fehler</li>
+            <li><strong>Coverage-Bericht</strong>: indexierte, ausgeschlossene und fehlerhafte Seiten</li>
+          </ul>
+
+          <div class="glossar-faq">
+            <h2>Häufige Fragen</h2>
+            <h3>Wie oft crawlt Google meine Website?</h3>
+            <p>Das hängt von Größe, Aktualität und Autorität ab. Eine aktive Newsseite wird mehrmals täglich gecrawlt, ein kleiner Unternehmensblog vielleicht alle paar Tage. Die genauen Zahlen siehst du in der Google Search Console unter „Crawl-Statistik”.</p>
+            <h3>Was ist der Unterschied zwischen Crawling und Indexierung?</h3>
+            <p>Crawling ist das Abrufen der Seite, Indexierung ist die Aufnahme in den Suchmaschinen-Index. Eine Seite kann gecrawlt, aber nicht indexiert werden – z. B. wenn sie ein noindex-Tag enthält oder als Duplicate Content gilt.</p>
+            <h3>Wie blockiere ich Crawler komplett?</h3>
+            <p>Über die robots.txt-Datei kannst du gesamte Bereiche oder einzelne Bots ausschließen. Für einzelne Seiten ist ein noindex-Meta-Tag besser – die Seite wird dann zwar gecrawlt, aber nicht indexiert.</p>
+          </div>
+
+          <blockquote>
+            <strong>Kurz gesagt:</strong> Crawling ist die unsichtbare Voraussetzung jeder Sichtbarkeit. Wer hier Engpässe hat, kann den besten Content schreiben – Google sieht ihn nie.
+          </blockquote>
+        </article>
+
+        <aside class="glossar-aside">
+          <div class="glossar-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/indexierung/">Indexierung</a></li>
+              <li><a href="/glossar/sitemap/">XML-Sitemap</a></li>
+              <li><a href="/glossar/robots-txt/">robots.txt</a></li>
+              <li><a href="/glossar/google-search-console/">Google Search Console</a></li>
+              <li><a href="/glossar/canonical-tag/">Canonical Tag</a></li>
+              <li><a href="/glossar/seo/">SEO</a></li>
+            </ul>
+          </div>
+          <div class="glossar-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+              <li><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a></li>
+              <li><a href="/ki-seo-geo/">KI-Content &amp; GEO</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Bereit für nachhaltige Sichtbarkeit?</h2>
+      <p>Lass uns sprechen, wie SEO dein Unternehmen messbar nach vorne bringt.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+4917361334300" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>Freiberuflicher Journalist und SEO Freelancer aus Essen – für Unternehmen, die mit starkem Content sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+4917361334300">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

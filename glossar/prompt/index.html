@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt – Die Anweisung an ein KI-Sprachmodell | Glossar</title>
+  <meta name="description" content="Ein Prompt ist eine Anweisung oder Frage, die du an ein KI-Sprachmodell wie ChatGPT oder Claude richtest. Die Qualität des Prompts bestimmt die Qualität der Antwort.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://juliandeutsch.de/glossar/prompt/">
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="Prompt – Die Anweisung an ein KI-Sprachmodell | Glossar">
+  <meta property="og:description" content="Ein Prompt ist eine Anweisung oder Frage, die du an ein KI-Sprachmodell wie ChatGPT oder Claude richtest. Die Qualität des Prompts bestimmt die Qualität der Antwort.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://juliandeutsch.de/glossar/prompt/">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="../../styles.css?v=20260601-glossar-expand">
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Prompt",
+  "description": "Ein Prompt ist eine Anweisung oder Frage, die du an ein KI-Sprachmodell wie ChatGPT oder Claude richtest. Die Qualität des Prompts bestimmt die Qualität der Antwort.",
+  "url": "https://juliandeutsch.de/glossar/prompt/",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "SEO-Glossar Julian Deutsch",
+    "url": "https://juliandeutsch.de/glossar/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Glossar",
+      "item": "https://juliandeutsch.de/glossar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Prompt",
+      "item": "https://juliandeutsch.de/glossar/prompt/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sind alle Prompts gleich – egal welches Modell?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Jedes Modell hat eigene Stärken und Schwächen, und Prompts müssen angepasst werden. Claude bevorzugt klare Aufgabentrennung mit XML-Tags, GPT-4 reagiert gut auf System-Prompts, Gemini ist stark mit Multimodal-Inputs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brauche ich Prompt Engineering, um mit KI zu arbeiten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicht zwingend. Für einfache Aufgaben reichen normale Fragen. Für wiederkehrende, qualitativ kritische Anwendungen (Content-Produktion, Code-Generierung, Datenanalyse) lohnt sich solides Prompt Engineering – die Ergebnisqualität verdoppelt sich oft."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie verbinde ich Prompts mit SEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indem du deine Content-Strategie konsequent an realen Prompts ausrichtest. Statt nur Keyword-Recherche zu machen, beobachte: Welche vollständigen Fragen stellen Menschen in ChatGPT, Perplexity und der neuen Google-Suchbox? Diese Prompts werden deine neuen Long-Tails."
+      }
+    }
+  ]
+}
+  </script>
+  <script>
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/" class="active">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/glossar/">Glossar</a><span class="breadcrumb-sep">/</span><span>Prompt</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Glossar · KI & GEO</span>
+        <h1>Prompt – Die Anweisung an ein KI-Modell</h1>
+        <p class="page-hero-text">Ein Prompt ist die Eingabe, mit der du ein KI-Sprachmodell wie ChatGPT, Claude oder Gemini steuerst. Ob Frage, Anweisung oder Kontext-Brief – die Qualität deines Prompts bestimmt direkt die Qualität der Antwort.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossar-detail">
+    <div class="container">
+      <div class="glossar-detail-layout">
+        <article class="glossar-content">
+          <h2>Was ist ein Prompt?</h2>
+          <p>Ein <strong>Prompt</strong> ist die Eingabe an ein <a href="/glossar/llm/">Large Language Model (LLM)</a>. Das Modell verarbeitet diesen Text und generiert daraus eine Antwort. Im einfachsten Fall ist ein Prompt eine kurze Frage – im komplexeren Fall eine mehrseitige Anleitung mit Beispielen, Format-Vorgaben und Rollenbeschreibungen.</p>
+          <p>Der Begriff hat sich in den letzten Jahren über die KI-Welt hinaus verbreitet. Wenn Nutzer heute in der neuen Google-Suchbox eine ganze Frage tippen statt eines Keywords, ist das de facto ein Prompt – siehe meine <a href="/blog/google-io-2026-ki-suche/">I/O-2026-Analyse</a>.</p>
+
+          <h2>Anatomie eines guten Prompts</h2>
+          <p>Wirkungsvolle Prompts enthalten meistens vier Bausteine:</p>
+          <ol>
+            <li><strong>Rolle</strong>: „Du bist ein erfahrener SEO Freelancer mit Fokus auf Local SEO.”</li>
+            <li><strong>Aufgabe</strong>: „Schreibe eine Meta Description für die folgende Seite.”</li>
+            <li><strong>Kontext</strong>: Inhalte, Daten, Beispiele, Zielgruppe</li>
+            <li><strong>Format-Vorgabe</strong>: „140–155 Zeichen, mit Call-to-Action, Hauptkeyword am Anfang.”</li>
+          </ol>
+
+          <h2>Prompt Engineering</h2>
+          <p><strong>Prompt Engineering</strong> ist die Disziplin, Prompts so zu formulieren, dass das Modell zuverlässig gute Antworten liefert. Dazu gehören Techniken wie:</p>
+          <ul>
+            <li><strong>Few-Shot Prompting</strong>: dem Modell ein bis drei Beispiele für das gewünschte Format mitgeben</li>
+            <li><strong>Chain of Thought</strong>: das Modell explizit auffordern, Schritt für Schritt zu denken</li>
+            <li><strong>System Prompts</strong>: dauerhafte Rollendefinition vor dem User-Input</li>
+            <li><strong>Strukturierter Output</strong>: JSON, Markdown, Tabellen explizit vorgeben</li>
+            <li><strong>Negative Constraints</strong>: explizit aufschreiben, was NICHT vorkommen soll</li>
+          </ul>
+
+          <h2>Prompts und SEO/GEO</h2>
+          <p>Mit dem Aufstieg von <a href="/glossar/ai-overviews/">AI Overviews</a> und ChatGPT Search verändert sich das Suchverhalten. Nutzer formulieren Prompts statt Keywords – länger, natürlicher, mit Kontext. Folgen für SEO:</p>
+          <ul>
+            <li>Inhalte müssen <a href="/glossar/long-tail-keyword/">Long-Tail-Suchanfragen</a> in natürlicher Sprache abdecken</li>
+            <li><a href="/glossar/suchintention/">Suchintentionen</a> werden differenzierter erkennbar – Inhalte müssen präziser passen</li>
+            <li>Strukturierte Inhalte (Listen, FAQ, Tabellen) werden bevorzugt zitiert – siehe <a href="/glossar/geo/">GEO</a></li>
+            <li>Klare, abgeschlossene Sätze sind zitierfähiger als verschachtelte Marketing-Prosa</li>
+          </ul>
+
+          <div class="glossar-faq">
+            <h2>Häufige Fragen</h2>
+            <h3>Sind alle Prompts gleich – egal welches Modell?</h3>
+            <p>Nein. Jedes Modell hat eigene Stärken und Schwächen, und Prompts müssen angepasst werden. Claude bevorzugt klare Aufgabentrennung mit XML-Tags, GPT-4 reagiert gut auf System-Prompts, Gemini ist stark mit Multimodal-Inputs.</p>
+            <h3>Brauche ich Prompt Engineering, um mit KI zu arbeiten?</h3>
+            <p>Nicht zwingend. Für einfache Aufgaben reichen normale Fragen. Für wiederkehrende, qualitativ kritische Anwendungen (Content-Produktion, Code-Generierung, Datenanalyse) lohnt sich solides Prompt Engineering – die Ergebnisqualität verdoppelt sich oft.</p>
+            <h3>Wie verbinde ich Prompts mit SEO?</h3>
+            <p>Indem du deine Content-Strategie konsequent an realen Prompts ausrichtest. Statt nur Keyword-Recherche zu machen, beobachte: Welche vollständigen Fragen stellen Menschen in ChatGPT, Perplexity und der neuen Google-Suchbox? Diese Prompts werden deine neuen Long-Tails.</p>
+          </div>
+
+          <blockquote>
+            <strong>Kurz gesagt:</strong> Prompts sind die neue Form der Such-Anfrage. Wer als Marketer 2026 nicht selbst regelmäßig prompted, versteht nicht mehr, wie seine Zielgruppe sucht.
+          </blockquote>
+        </article>
+
+        <aside class="glossar-aside">
+          <div class="glossar-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/llm/">LLM</a></li>
+              <li><a href="/glossar/geo/">GEO</a></li>
+              <li><a href="/glossar/ai-overviews/">AI Overviews</a></li>
+              <li><a href="/glossar/suchintention/">Suchintention</a></li>
+              <li><a href="/glossar/long-tail-keyword/">Long-Tail-Keyword</a></li>
+              <li><a href="/glossar/seo/">SEO</a></li>
+            </ul>
+          </div>
+          <div class="glossar-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+              <li><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a></li>
+              <li><a href="/ki-seo-geo/">KI-Content &amp; GEO</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Bereit für nachhaltige Sichtbarkeit?</h2>
+      <p>Lass uns sprechen, wie SEO dein Unternehmen messbar nach vorne bringt.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+4917361334300" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>Freiberuflicher Journalist und SEO Freelancer aus Essen – für Unternehmen, die mit starkem Content sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+4917361334300">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

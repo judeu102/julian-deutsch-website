@@ -35,3 +35,19 @@
 
 ## Glossar
 - https://juliandeutsch.de/glossar/ – SEO- und KI-Glossar mit Fachbegriffen
+- https://juliandeutsch.de/glossar/geo/ – Generative Engine Optimization
+- https://juliandeutsch.de/glossar/llm/ – Large Language Model
+- https://juliandeutsch.de/glossar/ai-overviews/ – Googles KI-Antworten in der SERP
+- https://juliandeutsch.de/glossar/schema-org/ – Strukturierte Daten / Schema.org
+- https://juliandeutsch.de/glossar/rich-snippet/ – Erweiterte Suchergebnisse
+- https://juliandeutsch.de/glossar/crawling/ – Wie Suchmaschinen Webseiten lesen
+- https://juliandeutsch.de/glossar/indexierung/ – Wie Seiten in den Suchindex kommen
+- https://juliandeutsch.de/glossar/robots-txt/ – Steuerung fuer Crawler
+- https://juliandeutsch.de/glossar/llms-txt/ – Steuerung fuer KI-Crawler
+- https://juliandeutsch.de/glossar/suchintention/ – Was Nutzer mit ihrer Suche meinen
+- https://juliandeutsch.de/glossar/long-tail-keyword/ – Spezifische Suchanfragen
+- https://juliandeutsch.de/glossar/pillar-page/ – Themen-Hub im Content-SEO
+- https://juliandeutsch.de/glossar/google-business-profile/ – Lokaler Unternehmens-Eintrag
+- https://juliandeutsch.de/glossar/local-pack/ – Top-3-Box im Local SEO
+- https://juliandeutsch.de/glossar/nap/ – Name, Address, Phone fuer Local SEO
+- https://juliandeutsch.de/glossar/prompt/ – Anweisung an ein KI-Sprachmodell
