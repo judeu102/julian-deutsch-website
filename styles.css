@@ -3436,3 +3436,33 @@ section {
     text-align: center;
   }
 }
+
+/* Case-Study-Box (im Fließtext eingebettet) */
+.case-study-box {
+  box-shadow: 0 1px 3px rgba(11, 29, 58, 0.04);
+}
+.case-study-box h3 {
+  color: var(--color-primary);
+}
+.case-study-box a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+.case-study-box a:hover {
+  text-decoration: underline;
+}
+.case-study-box ul li {
+  padding: 2px 0;
+}
+@media (max-width: 640px) {
+  .case-study-box {
+    grid-template-columns: 1fr !important;
+    text-align: left;
+  }
+  .case-study-box > div:first-child {
+    justify-self: start;
+  }
+  .case-study-box ul {
+    grid-template-columns: 1fr !important;
+  }
+}
