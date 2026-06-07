@@ -39,6 +39,9 @@
 - https://juliandeutsch.de/blog/geo-vs-seo/ – GEO vs SEO – Vergleich und Strategie
 - https://juliandeutsch.de/blog/geschichte-der-suchmaschinenoptimierung/ – Pillar-Artikel: Vollstaendige Chronologie der SEO von 1990 bis 2026
 - https://juliandeutsch.de/blog/google-ranking-verbessern/ – Praxis-Anleitung: 12 Hebel zur Verbesserung des Google Rankings
+- https://juliandeutsch.de/blog/seo-fuer-anwaelte/ – Branchen-SEO fuer Kanzleien und Rechtsanwaelte (BRAO-konform)
+- https://juliandeutsch.de/blog/seo-fuer-steuerberater/ – Branchen-SEO fuer Steuerkanzleien und Steuerberater
+- https://juliandeutsch.de/blog/seo-fuer-immobilienmakler/ – Branchen-SEO fuer Immobilienmakler (Eigentuemer-Akquise)
 - https://juliandeutsch.de/blog/ai-seo/ – AI SEO – Wie KI die Suchmaschinenoptimierung verändert
 - https://juliandeutsch.de/blog/ai-content-google-ranking/ – KI-Content und Google: Was rankt 2026 noch?
 
