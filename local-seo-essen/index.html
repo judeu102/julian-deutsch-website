@@ -19,7 +19,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://juliandeutsch.de/local-seo-essen/">
   <meta property="og:locale" content="de_DE">
-  <link rel="stylesheet" href="../styles.css?v=20260607-ranking">
+  <link rel="stylesheet" href="../styles.css?v=20260607-hero-img">
 
   <script type="application/ld+json">
   {
@@ -239,17 +239,35 @@
   <!-- HERO -->
   <section class="page-hero">
     <div class="container">
-      <div class="page-hero-content">
-        <span class="kicker">Local SEO · Essen · Ruhrgebiet</span>
-        <h1>Local SEO Essen – sichtbar werden, wo deine Kunden suchen</h1>
-        <p class="page-hero-text">Du willst, dass dein Unternehmen in Essen bei Google Maps und im Local Pack ganz oben steht, wenn jemand „Friseur Rüttenscheid”, „Steuerberater Werden” oder „Anwalt Essen-Süd” sucht? Genau dafür ist Local SEO da. Als SEO Freelancer mit Sitz in Essen-Heisingen baue ich dir ein lokales Sichtbarkeits-Setup, das systematisch Anfragen produziert – persönlich, transparent, mit Ruhrgebiets-Bezug.</p>
-        <div class="hero-buttons">
-          <a href="tel:+4917361334300" class="btn btn-primary btn-arrow">Jetzt anrufen</a>
-          <a href="/kontakt/" class="btn btn-secondary">Kontaktformular</a>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;" class="local-hero-grid">
+        <div class="page-hero-content">
+          <span class="kicker">Local SEO · Essen · Ruhrgebiet</span>
+          <h1>Local SEO Essen – sichtbar werden, wo deine Kunden suchen</h1>
+          <p class="page-hero-text">Du willst, dass dein Unternehmen in Essen bei Google Maps und im Local Pack ganz oben steht, wenn jemand „Friseur Rüttenscheid”, „Steuerberater Werden” oder „Anwalt Essen-Süd” sucht? Genau dafür ist Local SEO da. Als SEO Freelancer mit Sitz in Essen-Heisingen baue ich dir ein lokales Sichtbarkeits-Setup, das systematisch Anfragen produziert – persönlich, transparent, mit Ruhrgebiets-Bezug.</p>
+          <div class="hero-buttons">
+            <a href="tel:+4917361334300" class="btn btn-primary btn-arrow">Jetzt anrufen</a>
+            <a href="/kontakt/" class="btn btn-secondary">Kontaktformular</a>
+          </div>
+        </div>
+        <div class="local-hero-image">
+          <img src="local-seo-essen-hero.png" alt="Local SEO Essen – Sichtbarkeit auf Google Maps, im Local Pack und in lokalen Suchergebnissen" width="1672" height="941" loading="eager" fetchpriority="high" style="width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px rgba(11, 29, 58, 0.12);">
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Responsive Hero -->
+  <style>
+    @media (max-width: 900px) {
+      .local-hero-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+      }
+      .local-hero-image {
+        order: -1;
+      }
+    }
+  </style>
 
   <!-- INFOBOX: WAS IST LOCAL SEO? -->
   <section class="why">
