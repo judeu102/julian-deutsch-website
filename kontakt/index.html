@@ -180,25 +180,34 @@
         </div>
 
         <div class="contact-form-wrapper">
-          <form class="contact-form" action="#" method="POST">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/DEINE_FORM_ID" method="POST" novalidate>
+            <!-- Honeypot gegen Spam -->
+            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" required placeholder="Dein Name">
+              <input type="text" id="name" name="name" required placeholder="Dein Name" autocomplete="name">
             </div>
             <div class="form-group">
               <label for="email">E-Mail</label>
-              <input type="email" id="email" name="email" required placeholder="deine@email.de">
+              <input type="email" id="email" name="email" required placeholder="deine@email.de" autocomplete="email">
             </div>
             <div class="form-group">
               <label for="company">Unternehmen <span class="optional">(optional)</span></label>
-              <input type="text" id="company" name="company" placeholder="Dein Unternehmen">
+              <input type="text" id="company" name="company" placeholder="Dein Unternehmen" autocomplete="organization">
             </div>
             <div class="form-group">
               <label for="message">Nachricht</label>
               <textarea id="message" name="message" rows="5" required placeholder="Erzähl mir von deinem Projekt..."></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-arrow" style="width: 100%;">Nachricht senden</button>
+            <div id="formError" role="alert" aria-live="polite" style="display:none;color:#c0392b;margin-bottom:12px;font-size:.9rem;"></div>
+            <button type="submit" class="btn btn-primary btn-arrow" id="submitBtn" style="width:100%;">Nachricht senden</button>
           </form>
+
+          <div id="formSuccess" style="display:none;text-align:center;padding:40px 20px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom:16px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h3 style="margin-bottom:8px;">Nachricht erhalten!</h3>
+            <p style="color:var(--color-subtext);">Ich melde mich innerhalb von 24 Stunden. Bis gleich!</p>
+          </div>
         </div>
       </div>
     </div>
@@ -231,7 +240,6 @@
       spans[1].style.opacity = isOpen ? '0' : '';
       spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
     });
-    // Close mobile nav when a link is clicked
     document.querySelectorAll('.nav-mobile a').forEach(link => {
       link.addEventListener('click', () => {
         navMobile.classList.remove('open');
@@ -243,6 +251,46 @@
         spans[2].style.transform = '';
       });
     });
+
+    // Formspree AJAX Submit
+    const form = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const formSuccess = document.getElementById('formSuccess');
+    const formError = document.getElementById('formError');
+
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        formError.style.display = 'none';
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Wird gesendet…';
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (res.ok) {
+            form.style.display = 'none';
+            formSuccess.style.display = 'block';
+          } else {
+            const data = await res.json().catch(() => ({}));
+            const msg = data.errors ? data.errors.map(e => e.message).join(', ') : 'Unbekannter Fehler.';
+            formError.textContent = 'Fehler beim Senden: ' + msg;
+            formError.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Nachricht senden';
+          }
+        } catch (err) {
+          formError.textContent = 'Netzwerkfehler. Bitte direkt per E-Mail schreiben: kontakt@juliandeutsch.de';
+          formError.style.display = 'block';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Nachricht senden';
+        }
+      });
+    }
   </script>
 </body>
 </html>
