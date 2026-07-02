@@ -3782,3 +3782,169 @@ h1 {
     transform: none;
   }
 }
+
+/* ============================================
+   STEIN INS ROLLEN – Lead-Magnet-Animation
+   Reine CSS/SVG-Animation, kein JS. Basis-
+   Zustand = fertige Szene (reduced-motion-
+   Fallback zeigt statisches Endbild).
+   ============================================ */
+.stein-section {
+  padding: var(--section-py) 0;
+  background: linear-gradient(180deg, #fff 0%, var(--color-surface) 100%);
+}
+
+.stein-scene {
+  max-width: 900px;
+  margin: 8px auto 0;
+}
+
+.stein-scene svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.stein-scene text {
+  font-family: var(--font-primary);
+}
+
+.stein-cta {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.stein-note {
+  margin-top: 14px;
+  font-size: 0.875rem;
+  color: var(--color-subtext);
+}
+
+/* --- Basis = Endzustand der Szene --- */
+.stein-move,
+.stein-rock,
+.stein-pusher,
+.stein-flag,
+.stein-bar {
+  transform-box: fill-box;
+}
+
+.stein-move {
+  transform: translate(740px, 303px);
+}
+
+.stein-rock {
+  transform-origin: center;
+  transform: rotate(0deg);
+}
+
+.stein-pusher {
+  transform-origin: center;
+  transform: translate(6px, 1px) rotate(10deg);
+}
+
+.stein-flag {
+  transform-origin: 50% 100%;
+  transform: scale(1);
+}
+
+.stein-bar {
+  transform-origin: 50% 100%;
+  transform: scaleY(1);
+}
+
+/* --- Animationen (7s-Loop) nur ohne Motion-Präferenz --- */
+@media (prefers-reduced-motion: no-preference) {
+  .stein-move   { animation: stein-roll 7s infinite; }
+  .stein-rock   { animation: stein-spin 7s infinite; }
+  .stein-pusher { animation: stein-push 7s infinite; }
+  .stein-flag-1 { animation: stein-flag1 7s infinite; }
+  .stein-flag-2 { animation: stein-flag2 7s infinite; }
+  .stein-flag-3 { animation: stein-flag3 7s infinite; }
+  .stein-bar-1  { animation: stein-bar1 7s infinite; }
+  .stein-bar-2  { animation: stein-bar2 7s infinite; }
+  .stein-bar-3  { animation: stein-bar3 7s infinite; }
+}
+
+@keyframes stein-roll {
+  0%, 4% {
+    transform: translate(140px, 204px);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.85, 0.55);
+  }
+  68% {
+    transform: translate(690px, 301px);
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.4, 1);
+  }
+  76%, 100% {
+    transform: translate(740px, 303px);
+  }
+}
+
+@keyframes stein-spin {
+  0%, 4% {
+    transform: rotate(0deg);
+    animation-timing-function: cubic-bezier(0.5, 0, 0.85, 0.55);
+  }
+  68% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.2, 0.6, 0.4, 1);
+  }
+  76%, 100% {
+    transform: rotate(1000deg);
+  }
+}
+
+@keyframes stein-push {
+  0% {
+    transform: translate(0, 0) rotate(10deg);
+    animation-timing-function: cubic-bezier(0.34, 1.4, 0.64, 1);
+  }
+  6% {
+    transform: translate(16px, 3px) rotate(10deg);
+  }
+  12%, 100% {
+    transform: translate(6px, 1px) rotate(10deg);
+  }
+}
+
+@keyframes stein-flag1 {
+  0%, 20% { transform: scale(0); }
+  25% { transform: scale(1.14); }
+  29%, 100% { transform: scale(1); }
+}
+
+@keyframes stein-flag2 {
+  0%, 42% { transform: scale(0); }
+  47% { transform: scale(1.14); }
+  51%, 100% { transform: scale(1); }
+}
+
+@keyframes stein-flag3 {
+  0%, 58% { transform: scale(0); }
+  63% { transform: scale(1.14); }
+  67%, 100% { transform: scale(1); }
+}
+
+@keyframes stein-bar1 {
+  0%, 74% { transform: scaleY(0); }
+  79% { transform: scaleY(1.1); }
+  83%, 100% { transform: scaleY(1); }
+}
+
+@keyframes stein-bar2 {
+  0%, 78% { transform: scaleY(0); }
+  83% { transform: scaleY(1.1); }
+  87%, 100% { transform: scaleY(1); }
+}
+
+@keyframes stein-bar3 {
+  0%, 82% { transform: scaleY(0); }
+  87% { transform: scaleY(1.1); }
+  91%, 100% { transform: scaleY(1); }
+}
+
+@media (max-width: 768px) {
+  .stein-section {
+    padding: var(--section-py-mobile) 0;
+  }
+}
