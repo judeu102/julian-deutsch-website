@@ -21,6 +21,7 @@
 
 ## Blog
 - https://juliandeutsch.de/blog/ – SEO- und KI-Fachartikel
+- https://juliandeutsch.de/blog/chatgpt-seo/ – In ChatGPT-Antworten zitiert werden: Bing-Index, OpenAI-Crawler, Schema, llms.txt
 - https://juliandeutsch.de/blog/was-macht-ein-seo-freelancer/
 - https://juliandeutsch.de/blog/seo-freelancer-kosten/
 - https://juliandeutsch.de/blog/seo-freelancer-vs-agentur/
