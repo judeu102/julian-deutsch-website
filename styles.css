@@ -3961,3 +3961,61 @@ h1 {
     linear-gradient(90deg, transparent 0%, #000 7%, #000 93%, transparent 100%);
   mask-composite: intersect;
 }
+
+/* ============================================
+   SEO-KREISLAUF – animiertes SVG
+   Fliessende Pfeile + sequenzielles Pulsieren
+   der 6 Schritte (12s-Loop). Reduced-Motion:
+   statisches, vollstaendiges Diagramm.
+   ============================================ */
+.kl-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  font-family: var(--font-primary);
+}
+
+.kl-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.kl-ping {
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Pfeile fliessen kontinuierlich im Uhrzeigersinn */
+  .kl-flow {
+    stroke-dasharray: 13 7;
+    animation: kl-flow 1.1s linear infinite;
+  }
+
+  /* Schritte pulsieren nacheinander (12s = 6 x 2s) */
+  .kl-pulse { animation: kl-pulse 12s infinite; }
+  .kl-ping  { animation: kl-ping 12s infinite; }
+  .kl-pulse-1 { animation-delay: 0s; }    .kl-ping-1 { animation-delay: 0s; }
+  .kl-pulse-2 { animation-delay: 2s; }    .kl-ping-2 { animation-delay: 2s; }
+  .kl-pulse-3 { animation-delay: 4s; }    .kl-ping-3 { animation-delay: 4s; }
+  .kl-pulse-4 { animation-delay: 6s; }    .kl-ping-4 { animation-delay: 6s; }
+  .kl-pulse-5 { animation-delay: 8s; }    .kl-ping-5 { animation-delay: 8s; }
+  .kl-pulse-6 { animation-delay: 10s; }   .kl-ping-6 { animation-delay: 10s; }
+}
+
+@keyframes kl-flow {
+  to { stroke-dashoffset: -20; }
+}
+
+@keyframes kl-pulse {
+  0%, 12%, 100% { transform: scale(1); }
+  5% { transform: scale(1.07); }
+}
+
+@keyframes kl-ping {
+  0%, 100% { transform: scale(1); opacity: 0; }
+  2% { transform: scale(1); opacity: 0.55; }
+  11% { transform: scale(1.22); opacity: 0; }
+  12% { transform: scale(1); opacity: 0; }
+}
