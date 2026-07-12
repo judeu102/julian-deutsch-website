@@ -4,6 +4,7 @@
 ## Kern-Inhalte
 - https://juliandeutsch.de/seo-freelancer/ – Money-Page mit Leistungen und Vorgehen
 - https://juliandeutsch.de/freelancer-suchmaschinenoptimierung/ – Deutsche Variante (Suchmaschinenoptimierung statt SEO)
+- https://juliandeutsch.de/seo-essen/ – Hub fuer Suchmaschinenoptimierung in Essen
 - https://juliandeutsch.de/local-seo-essen/ – Local SEO Service-Page fuer Essen und Ruhrgebiet
 - https://juliandeutsch.de/seo-freelancer-essen/ – Lokale Beratung im Ruhrgebiet
 - https://juliandeutsch.de/seo-freelancer-nrw/ – Hub fuer NRW-weite SEO-Beratung
@@ -17,11 +18,24 @@
 - https://juliandeutsch.de/ki-seo-geo/ – KI-SEO und Generative Engine Optimization
 - https://juliandeutsch.de/ueber-mich/ – Erfahrung, Schwerpunkte, Werdegang
 - https://juliandeutsch.de/referenzen/ – Kundenstimmen und Projekte
+- https://juliandeutsch.de/cases/tattoo-beauty-ally/ – Case Study: 3x mehr Klicks nach Website- und SEO-Relaunch (Search-Console-Daten)
 - https://juliandeutsch.de/kontakt/ – Erstgespräch anfragen
 
 ## Blog
 - https://juliandeutsch.de/blog/ – SEO- und KI-Fachartikel
 - https://juliandeutsch.de/blog/chatgpt-seo/ – In ChatGPT-Antworten zitiert werden: Bing-Index, OpenAI-Crawler, Schema, llms.txt
+- https://juliandeutsch.de/blog/was-ist-seo/ – Grundlagen: Was ist SEO? Definition, OnPage, OffPage, Beispiele
+- https://juliandeutsch.de/blog/suchmaschinen/ – Grosse Uebersicht: Alle wichtigen Suchmaschinen 2026 inkl. KI-Suche und Deutschland-Markt
+- https://juliandeutsch.de/blog/seo-agentur-essen-vs-freelancer/ – SEO Agentur Essen vs. Freelancer: ehrlicher Vergleich
+- https://juliandeutsch.de/blog/digitalmarketing-essen/ – Online Marketing und Digitalmarketing in Essen: Kanalvergleich
+- https://juliandeutsch.de/blog/ki-automatisierung-nrw/ – KI-Automatisierung fuer Unternehmen in NRW
+- https://juliandeutsch.de/blog/seo-bochum/ – Local SEO fuer Bochum
+- https://juliandeutsch.de/blog/seo-duisburg/ – Local SEO und B2B-SEO fuer Duisburg
+- https://juliandeutsch.de/blog/seo-fuer-coaches/ – Branchen-SEO fuer Coaches und Berater
+- https://juliandeutsch.de/blog/seo-fuer-fitnessstudios/ – Branchen-SEO fuer Fitnessstudios
+- https://juliandeutsch.de/blog/seo-fuer-physiotherapeuten/ – Branchen-SEO fuer Physio-Praxen
+- https://juliandeutsch.de/blog/seo-fuer-unternehmensberater/ – Branchen-SEO fuer Consultants und Berater
+- https://juliandeutsch.de/blog/seo-fuer-startups-nrw/ – SEO fuer Startups in NRW
 - https://juliandeutsch.de/blog/was-macht-ein-seo-freelancer/
 - https://juliandeutsch.de/blog/seo-freelancer-kosten/
 - https://juliandeutsch.de/blog/seo-freelancer-vs-agentur/
