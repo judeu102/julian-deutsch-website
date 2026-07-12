@@ -4019,3 +4019,61 @@ h1 {
   11% { transform: scale(1.22); opacity: 0; }
   12% { transform: scale(1); opacity: 0; }
 }
+
+/* ============================================
+   MOBILE NAV 2.0 – gruppiertes Burger-Menü
+   Leistungen/Regionen als Akkordeon statt
+   19 flacher Links.
+   ============================================ */
+.nav-mobile-group {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav-mobile-group summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text);
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-mobile-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-mobile-group summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-subtext);
+  transition: transform 0.2s ease;
+}
+
+.nav-mobile-group[open] summary::after {
+  content: '\2212';
+  color: var(--color-accent);
+}
+
+.nav-mobile-group[open] summary {
+  color: var(--color-accent);
+}
+
+.nav-mobile-group[open] {
+  padding-bottom: 6px;
+}
+
+/* Gruppen-Links: eingerückt, kompakter, ohne eigene Border */
+.nav-mobile .nav-mobile-group a:not(.btn) {
+  padding: 10px 0 10px 16px;
+  font-size: 0.9375rem;
+  color: var(--color-subtext);
+  border-bottom: none;
+}
+
+.nav-mobile .nav-mobile-group a:not(.btn):hover {
+  color: var(--color-accent);
+}
