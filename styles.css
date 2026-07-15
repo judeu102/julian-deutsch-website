@@ -200,14 +200,13 @@ section {
 
 .logo {
   display: inline-block;
-  /* JD-Favicon als Logo – Text bleibt im DOM für Accessibility/SEO */
-  background-image: url('favicon-512x512.png');
+  /* Wortmarke als Logo – Text bleibt im DOM für Accessibility/SEO */
+  background-image: url('logo-wordmark.webp');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: contain;
-  width: 44px;
-  height: 44px;
-  border-radius: 8px;
+  width: 145px;
+  height: 34px;
   text-indent: -9999px;
   overflow: hidden;
   white-space: nowrap;
@@ -218,20 +217,15 @@ section {
 
 /* Logo im Footer: gleiche Variante mit hellem Rand */
 .footer .logo {
-  background-image: url('favicon-512x512.png');
-}
-
-@media (max-width: 768px) {
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
+  background-image: url('logo-wordmark-dark.webp');
+  width: 150px;
+  height: 36px;
 }
 
 @media (max-width: 480px) {
   .logo {
-    width: 120px;
-    height: 32px;
+    width: 128px;
+    height: 30px;
   }
 }
 
