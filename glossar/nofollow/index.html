@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nofollow: Bedeutung, sponsored, ugc & Wirkung | SEO Glossar</title>
+  <meta name="description" content="Nofollow erklärt: Was rel="nofollow" bewirkt, wie sponsored und ugc sich unterscheiden, ob Nofollow-Links zählen und wann du sie setzen solltest.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://juliandeutsch.de/glossar/nofollow/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="Nofollow: Bedeutung, sponsored, ugc & Wirkung">
+  <meta property="og:description" content="Nofollow erklärt: Was rel="nofollow" bewirkt, wie sponsored und ugc sich unterscheiden, ob Nofollow-Links zählen und wann du sie setzen solltest.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://juliandeutsch.de/glossar/nofollow/">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="../../styles.css?v=20260723-grid">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Nofollow",
+  "description": "Nofollow ist ein Link-Attribut (rel='nofollow'), das Suchmaschinen signalisiert, einem Link nicht zu folgen und keine Autorität an die Zielseite weiterzugeben. Seit 2019 behandelt Google es als Hinweis statt als Anweisung; ergänzend gibt es rel='sponsored' für bezahlte und rel='ugc' für nutzergenerierte Links.",
+  "url": "https://juliandeutsch.de/glossar/nofollow/",
+  "inDefinedTermSet": "https://juliandeutsch.de/glossar/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Glossar",
+      "item": "https://juliandeutsch.de/glossar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Nofollow",
+      "item": "https://juliandeutsch.de/glossar/nofollow/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sind Nofollow-Links wertlos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Sie geben kaum direkte Autorität weiter, bringen aber Traffic, Markenerwähnungen und gehören zu einem natürlichen Linkprofil. Google behandelt Nofollow seit 2019 als Hinweis und kann Links aus vertrauenswürdigem Kontext trotzdem werten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Muss ich Affiliate-Links als sponsored kennzeichnen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Google verlangt für bezahlte Links – dazu zählen Affiliate-Links – das Attribut rel='sponsored' oder ersatzweise rel='nofollow'. Unmarkierte bezahlte Links verstoßen gegen die Spam-Richtlinien und können zu manuellen Maßnahmen führen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Soll ich interne Links auf Nofollow setzen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Interne Links steuern, wie Autorität innerhalb deiner Website fließt. Nofollow unterbricht diesen Fluss. Seiten, die nicht ranken sollen, bekommen ein noindex-Tag – der Link bleibt normal."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Nofollow: Bedeutung, sponsored, ugc & Wirkung",
+  "description": "Nofollow erklärt: Was rel=\"nofollow\" bewirkt, wie sponsored und ugc sich unterscheiden, ob Nofollow-Links zählen und wann du sie setzen solltest.",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "inLanguage": "de",
+  "author": {
+    "@type": "Person",
+    "name": "Julian Deutsch",
+    "url": "https://juliandeutsch.de/ueber-mich/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Julian Deutsch"
+  },
+  "mainEntityOfPage": "https://juliandeutsch.de/glossar/nofollow/"
+}
+  </script>
+  <script>
+    // GitHub-Pages Path-Rewriter: macht /foo/ zu /julian-deutsch-website/foo/
+    // Aktiviert sich NUR auf judeu102.github.io – bei localhost und custom domain passiert nichts
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+              <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/" class="active">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <details class="nav-mobile-group">
+        <summary>Leistungen</summary>
+        <a href="/seo-freelancer/">SEO Freelancer</a>
+        <a href="/seo-berater/">SEO-Berater</a>
+        <a href="/seo-beratung/">SEO Beratung</a>
+        <a href="/seo-experte/">SEO Experte</a>
+        <a href="/seo-texte/">SEO Texte</a>
+        <a href="/seo-copywriting/">SEO Copywriting</a>
+        <a href="/freelancer-suchmaschinenoptimierung/">Suchmaschinenoptimierung</a>
+        <a href="/ki-seo-geo/">KI &amp; GEO</a>
+        <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+      </details>
+      <details class="nav-mobile-group">
+        <summary>Regionen</summary>
+        <a href="/seo-essen/">SEO Essen</a>
+        <a href="/local-seo-essen/">Local SEO Essen</a>
+        <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+        <a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a>
+        <a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a>
+        <a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a>
+        <a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a>
+      </details>
+      <a href="/ueber-mich/">Über mich</a>
+      <a href="/referenzen/">Referenzen</a>
+      <a href="/blog/">Blog</a>
+      <a href="/glossar/">Glossar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/glossar/">Glossar</a><span class="breadcrumb-sep">/</span><span>Nofollow</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Glossar · OffPage SEO</span>
+        <h1>Nofollow</h1>
+        <p class="page-hero-text">Nofollow ist ein Link-Attribut (rel="nofollow"), das Suchmaschinen signalisiert, einem Link nicht zu folgen und keine Autorität an die Zielseite weiterzugeben. Seit 2019 behandelt Google es als Hinweis statt als Anweisung; ergänzend gibt es rel="sponsored" für bezahlte und rel="ugc" für nutzergenerierte Links.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossar-detail">
+    <div class="container">
+      <div class="glossar-detail-layout">
+        <article class="glossar-content">
+          <h2>Was bedeutet Nofollow?</h2>
+          <p>Das <strong>Nofollow</strong>-Attribut wurde 2005 von Google eingeführt, um Kommentarspam einzudämmen. Blogs setzten es automatisch auf alle Nutzerlinks, damit Spammer keinen Vorteil mehr aus Kommentaren ziehen. Technisch ist es ein Wert im <code>rel</code>-Attribut eines Links:</p>
+          <pre><code>&lt;a href="https://beispiel.de" rel="nofollow"&gt;Beispiel&lt;/a&gt;</code></pre>
+          <p>Die Aussage an Suchmaschinen: „Ich verlinke hierhin, aber ich bürge nicht dafür." Ein Link ohne das Attribut ist ein <strong>Dofollow</strong>-Link (das ist kein eigenes Attribut, sondern der Normalzustand) und gibt Autorität – oft „Linkjuice" genannt – an die Zielseite weiter. Mehr zur Bedeutung von Links unter <a href="/glossar/backlink/">Backlink</a>.</p>
+          <h2>Nofollow, sponsored und ugc</h2>
+          <p>Seit September 2019 unterscheidet Google drei Varianten:</p>
+          <ul>
+            <li><strong>rel="nofollow"</strong> – allgemein: Du willst keine Empfehlung aussprechen. Für Links zu Quellen, denen du nicht vertraust, oder wo du keine Verbindung signalisieren willst.</li>
+            <li><strong>rel="sponsored"</strong> – für bezahlte Links: Werbung, Affiliate-Links, gesponserte Beiträge. Google verlangt diese Kennzeichnung ausdrücklich; unmarkierte Kauflinks verstoßen gegen die Richtlinien.</li>
+            <li><strong>rel="ugc"</strong> – User Generated Content: Links in Kommentaren, Foren, Gastbeiträgen von Nutzern.</li>
+          </ul>
+          <p>Die Attribute lassen sich kombinieren (<code>rel="nofollow sponsored"</code>). Für Website-Betreiber wichtig: Affiliate-Links und bezahlte Platzierungen brauchen <code>sponsored</code>. Wer das ignoriert, riskiert, dass Google die gesamte Website als Linkverkäufer einstuft.</p>
+          <h2>Hinweis statt Anweisung: Was sich 2019 geändert hat</h2>
+          <p>Bis 2019 war Nofollow eine Anweisung – Google folgte dem Link nicht und wertete ihn nicht. Seitdem ist es ein <strong>Hint</strong>: Google entscheidet selbst, ob es dem Link folgt und wie es ihn gewichtet. In der Praxis heißt das: Ein Nofollow-Link von Wikipedia oder einer großen Zeitung kann durchaus Signale senden, weil Google den Kontext bewertet. Ein Nofollow-Link aus einem Spam-Kommentar bleibt wertlos.</p>
+          <p>Der Grund für die Änderung: Zu viele große Websites setzten Nofollow pauschal auf alle ausgehenden Links, was Google wertvolle Informationen über die Linkstruktur des Webs nahm.</p>
+          <h2>Zählen Nofollow-Links für SEO?</h2>
+          <p>Direkt für Rankings: wenig bis gar nicht – auch wenn Google sich seit 2019 die Option offenhält. Indirekt: erheblich.</p>
+          <ul>
+            <li><strong>Traffic.</strong> Ein Nofollow-Link aus einem reichweitenstarken Artikel bringt Besucher, unabhängig vom Attribut.</li>
+            <li><strong>Erwähnungen und Markensignale.</strong> Google und KI-Systeme registrieren, dass deine Marke in einem bestimmten Kontext genannt wird.</li>
+            <li><strong>Natürliches Linkprofil.</strong> Jede echte Website hat einen Anteil Nofollow-Links – aus Social Media, Foren, Wikipedia, Verzeichnissen. Ein Profil mit 100 Prozent Dofollow wirkt gebaut.</li>
+            <li><strong>Folgeeffekte.</strong> Wer dich über einen Nofollow-Link entdeckt, verlinkt vielleicht später dofollow.</li>
+          </ul>
+          <p>Für <a href="/glossar/linkbuilding/">Linkbuilding</a> heißt das: Nofollow-Links nicht ablehnen, aber auch nicht gezielt jagen. Der Fokus bleibt auf redaktionellen Dofollow-Links aus relevanten Quellen.</p>
+          <h2>Wann du selbst Nofollow setzen solltest</h2>
+          <ul>
+            <li><strong>Bezahlte Links und Affiliate</strong> – zwingend <code>sponsored</code>.</li>
+            <li><strong>Nutzerkommentare und Foren</strong> – <code>ugc</code>, meist automatisch durch das CMS.</li>
+            <li><strong>Links zu nicht vertrauenswürdigen Quellen</strong> – wenn du eine Seite als Beispiel für etwas Schlechtes verlinkst.</li>
+            <li><strong>Login-, Warenkorb-, Filter-URLs</strong> – hier ist Nofollow allerdings das falsche Werkzeug; besser robots.txt oder noindex.</li>
+          </ul>
+          <p>Nicht setzen solltest du es auf interne Links (Google folgt ihnen dann eventuell nicht, und die Seite verliert interne Signale) und pauschal auf alle externen Links – das schadet dir mehr als es nützt, weil Google deine Website als Teil des Webs weniger versteht.</p>
+          <h2>Nofollow im Linkprofil prüfen</h2>
+          <p>Tools wie Sistrix, Ahrefs oder Semrush zeigen für jeden Backlink, ob er dofollow oder nofollow ist. Ein gesundes Profil hat typischerweise 70 bis 90 Prozent Dofollow. Liegt der Nofollow-Anteil deutlich höher, kommen die meisten Links wahrscheinlich aus Verzeichnissen, Social Media und Kommentaren – dann fehlt der redaktionelle Kern. Siehe auch <a href="/glossar/domain-authority/">Domain Authority</a>.</p>
+
+          <blockquote><strong>Kurz gesagt:</strong> Nofollow sagt Google: „Ich bürge nicht für diesen Link." Für dein Linkprofil sind solche Links kein Verlust, sondern der natürliche Anteil, den jede echte Website hat.</blockquote>
+        </article>
+
+        <aside class="glossar-aside">
+          <div class="glossar-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/backlink/">Backlink</a></li>
+              <li><a href="/glossar/linkbuilding/">Linkbuilding</a></li>
+              <li><a href="/glossar/offpage-seo/">OffPage SEO</a></li>
+              <li><a href="/glossar/robots-txt/">robots.txt</a></li>
+              <li><a href="/glossar/indexierung/">Indexierung</a></li>
+            </ul>
+          </div>
+          <div class="glossar-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/seo-beratung/">SEO Beratung mit Backlink-Check</a></li>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+              <li><a href="/ki-seo-geo/">KI & GEO</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">FAQ</span>
+        <h2>Häufige Fragen zu Nofollow-Links</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-question">Sind Nofollow-Links wertlos?</summary><div class="faq-answer"><p>Nein. Sie geben kaum direkte Autorität weiter, bringen aber Traffic, Markenerwähnungen und gehören zu einem natürlichen Linkprofil. Google behandelt Nofollow seit 2019 als Hinweis und kann Links aus vertrauenswürdigem Kontext trotzdem werten.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Muss ich Affiliate-Links als sponsored kennzeichnen?</summary><div class="faq-answer"><p>Ja. Google verlangt für bezahlte Links – dazu zählen Affiliate-Links – das Attribut rel="sponsored" oder ersatzweise rel="nofollow". Unmarkierte bezahlte Links verstoßen gegen die Spam-Richtlinien und können zu manuellen Maßnahmen führen.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Soll ich interne Links auf Nofollow setzen?</summary><div class="faq-answer"><p>Nein. Interne Links steuern, wie Autorität innerhalb deiner Website fließt. Nofollow unterbricht diesen Fluss. Seiten, die nicht ranken sollen, bekommen ein noindex-Tag – der Link bleibt normal.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Backlink-Strategie, die wirkt</h2>
+      <p>Lass uns gemeinsam ein Backlink-Setup entwickeln, das deine Domain langfristig stärkt – ohne riskante Shortcuts.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+491736133430" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>Freiberuflicher Journalist und SEO Freelancer aus Essen – für Unternehmen, die mit starkem Content sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-beratung/">SEO Beratung</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/prozessautomatisierung/">Prozessautomatisierung</a><a href="/local-seo-essen/">Local SEO Essen</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+491736133430">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

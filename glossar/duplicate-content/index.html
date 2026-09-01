@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duplicate Content: Ursachen, Folgen & Lösungen | SEO Glossar</title>
+  <meta name="description" content="Duplicate Content erklärt: Interne und externe Duplikate, warum sie Rankings kosten, wie du sie findest und mit Canonical, Redirect oder Noindex behebst.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://juliandeutsch.de/glossar/duplicate-content/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="Duplicate Content: Ursachen, Folgen & Lösungen">
+  <meta property="og:description" content="Duplicate Content erklärt: Interne und externe Duplikate, warum sie Rankings kosten, wie du sie findest und mit Canonical, Redirect oder Noindex behebst.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://juliandeutsch.de/glossar/duplicate-content/">
+  <meta property="og:locale" content="de_DE">
+  <link rel="stylesheet" href="../../styles.css?v=20260723-grid">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Duplicate Content",
+  "description": "Duplicate Content bezeichnet identische oder sehr ähnliche Inhalte, die unter mehreren URLs erreichbar sind – innerhalb der eigenen Website oder domainübergreifend. Google muss dann entscheiden, welche Version rankt, und verteilt Signale wie Links auf mehrere Kopien. Das Ergebnis sind schwächere Rankings für alle Varianten.",
+  "url": "https://juliandeutsch.de/glossar/duplicate-content/",
+  "inDefinedTermSet": "https://juliandeutsch.de/glossar/"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Glossar",
+      "item": "https://juliandeutsch.de/glossar/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Duplicate Content",
+      "item": "https://juliandeutsch.de/glossar/duplicate-content/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Gibt es eine Google-Strafe für Duplicate Content?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, keine Penalty im eigentlichen Sinn. Google filtert Duplikate und zeigt eine Version. Eine manuelle Maßnahme gibt es nur bei bewusst manipulativem Kopieren fremder Inhalte in großem Stil. Der Schaden entsteht durch zersplitterte Signale und falsche Kanonisierung, nicht durch Bestrafung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ab wann gilt ein Text als Duplikat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Es gibt keinen festen Prozentwert. Google bewertet, ob der Hauptinhalt zweier Seiten im Wesentlichen derselbe ist. Ein ausgetauschter Ortsname bei sonst identischem Text zählt als Duplikat; zwei Artikel zum selben Thema mit eigenständigem Text nicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was tun, wenn jemand meine Texte kopiert?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zuerst prüfen, ob Google deine Version als Original erkennt – meist ja, wenn sie zuerst indexiert wurde. Dann den Betreiber anschreiben. Bei Weigerung bleibt der Weg über eine DMCA-Meldung an Google oder rechtliche Schritte. Ein Canonical auf deine Seite setzt der Kopierer selten freiwillig."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Duplicate Content: Ursachen, Folgen & Lösungen",
+  "description": "Duplicate Content erklärt: Interne und externe Duplikate, warum sie Rankings kosten, wie du sie findest und mit Canonical, Redirect oder Noindex behebst.",
+  "datePublished": "2026-09-01",
+  "dateModified": "2026-09-01",
+  "inLanguage": "de",
+  "author": {
+    "@type": "Person",
+    "name": "Julian Deutsch",
+    "url": "https://juliandeutsch.de/ueber-mich/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Julian Deutsch"
+  },
+  "mainEntityOfPage": "https://juliandeutsch.de/glossar/duplicate-content/"
+}
+  </script>
+  <script>
+    // GitHub-Pages Path-Rewriter: macht /foo/ zu /julian-deutsch-website/foo/
+    // Aktiviert sich NUR auf judeu102.github.io – bei localhost und custom domain passiert nichts
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+              <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/" class="active">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <details class="nav-mobile-group">
+        <summary>Leistungen</summary>
+        <a href="/seo-freelancer/">SEO Freelancer</a>
+        <a href="/seo-berater/">SEO-Berater</a>
+        <a href="/seo-beratung/">SEO Beratung</a>
+        <a href="/seo-experte/">SEO Experte</a>
+        <a href="/seo-texte/">SEO Texte</a>
+        <a href="/seo-copywriting/">SEO Copywriting</a>
+        <a href="/freelancer-suchmaschinenoptimierung/">Suchmaschinenoptimierung</a>
+        <a href="/ki-seo-geo/">KI &amp; GEO</a>
+        <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+      </details>
+      <details class="nav-mobile-group">
+        <summary>Regionen</summary>
+        <a href="/seo-essen/">SEO Essen</a>
+        <a href="/local-seo-essen/">Local SEO Essen</a>
+        <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+        <a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a>
+        <a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a>
+        <a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a>
+        <a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a>
+      </details>
+      <a href="/ueber-mich/">Über mich</a>
+      <a href="/referenzen/">Referenzen</a>
+      <a href="/blog/">Blog</a>
+      <a href="/glossar/">Glossar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/glossar/">Glossar</a><span class="breadcrumb-sep">/</span><span>Duplicate Content</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Glossar · OnPage SEO</span>
+        <h1>Duplicate Content</h1>
+        <p class="page-hero-text">Duplicate Content bezeichnet identische oder sehr ähnliche Inhalte, die unter mehreren URLs erreichbar sind – innerhalb der eigenen Website oder domainübergreifend. Google muss dann entscheiden, welche Version rankt, und verteilt Signale wie Links auf mehrere Kopien. Das Ergebnis sind schwächere Rankings für alle Varianten.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossar-detail">
+    <div class="container">
+      <div class="glossar-detail-layout">
+        <article class="glossar-content">
+          <h2>Was ist Duplicate Content?</h2>
+          <p><strong>Duplicate Content</strong> (doppelter Inhalt) entsteht, wenn derselbe oder ein weitgehend gleicher Inhalt unter mehr als einer URL erreichbar ist. Das passiert häufiger, als die meisten denken – oft ohne dass jemand etwas kopiert hat: Eine Seite ist mit und ohne „www" erreichbar, mit und ohne Schrägstrich am Ende, mit Tracking-Parametern, als Druckversion, in einer Kategorie und einem Tag-Archiv.</p>
+          <p>Ein hartnäckiger Mythos: die „Duplicate-Content-Penalty". Google bestraft doppelte Inhalte nicht. Aber Google muss sich für eine Version entscheiden, und diese Entscheidung fällt nicht immer zu deinen Gunsten. Gleichzeitig verteilen sich Backlinks und interne Links auf mehrere Kopien, statt eine Seite zu stärken.</p>
+          <h2>Interner vs. externer Duplicate Content</h2>
+          <h3>Intern (innerhalb der eigenen Domain)</h3>
+          <ul>
+            <li>URL-Varianten: http/https, www/ohne www, mit/ohne Trailing Slash, Groß-/Kleinschreibung</li>
+            <li>Parameter: Sortierungen, Filter, Session-IDs, UTM-Tags</li>
+            <li>Paginierung und Archive: Blog-Kategorien, Tags, Autorenseiten mit denselben Teasern</li>
+            <li>Produktvarianten: Eine Hose in fünf Farben als fünf URLs mit identischem Text</li>
+            <li>Stadt-Landingpages mit ausgetauschtem Ortsnamen – siehe <a href="/glossar/landingpage/">Landingpage</a></li>
+            <li>Druckversionen, PDF-Kopien, AMP-Seiten ohne korrekte Verknüpfung</li>
+          </ul>
+          <h3>Extern (domainübergreifend)</h3>
+          <ul>
+            <li>Herstellertexte, die hunderte Shops unverändert übernehmen</li>
+            <li>Pressemitteilungen, die auf vielen Portalen erscheinen</li>
+            <li>Syndizierte Artikel ohne Quellenangabe per Canonical</li>
+            <li>Content-Diebstahl: Andere kopieren deine Texte</li>
+            <li>Eigene Inhalte auf mehreren eigenen Domains oder Subdomains</li>
+          </ul>
+          <h2>Warum Duplicate Content Rankings kostet</h2>
+          <ol>
+            <li><strong>Google wählt.</strong> Von mehreren Kopien wird eine kanonisiert – die anderen erscheinen nicht. Welche, entscheidet Google, wenn du es nicht per <a href="/glossar/canonical-tag/">Canonical</a> vorgibst.</li>
+            <li><strong>Signale zersplittern.</strong> Fünf Backlinks auf fünf URL-Varianten sind fünf schwache Seiten statt einer starken.</li>
+            <li><strong><a href="/glossar/crawling/">Crawl-Budget</a> wird verschwendet.</strong> Google crawlt Kopien, statt neue oder aktualisierte Seiten zu erfassen. Bei kleinen Websites irrelevant, bei Shops mit tausenden Varianten ein echtes Problem.</li>
+            <li><strong>Kannibalisierung.</strong> Ähnliche, nicht identische Seiten konkurrieren um dasselbe Keyword – und wechseln sich im Ranking ab, ohne dass eine stabil vorne liegt.</li>
+          </ol>
+          <h2>Duplicate Content finden</h2>
+          <ul>
+            <li><strong>Google Search Console:</strong> Unter „Seiten" die Kategorien „Duplikat – vom Nutzer nicht als kanonisch festgelegt" und „Duplikat – Google hat eine andere kanonische Seite gewählt".</li>
+            <li><strong>site:-Suche:</strong> <code>site:deinedomain.de "ein markanter Satz"</code> zeigt, ob der Text mehrfach indexiert ist.</li>
+            <li><strong>Crawler:</strong> Screaming Frog oder Sistrix Optimizer listen doppelte Titles, H1 und Inhalte.</li>
+            <li><strong>Externe Prüfung:</strong> Copyscape oder Siteliner finden Kopien auf fremden Domains.</li>
+          </ul>
+          <h2>Lösungen: Welche Methode wann</h2>
+          <ul>
+            <li><strong><a href="/glossar/canonical-tag/">Canonical-Tag</a></strong> – wenn mehrere URLs bestehen bleiben müssen (Filter, Parameter, Varianten). Zeigt Google die Hauptversion, alle Signale fließen dorthin.</li>
+            <li><strong>301-Weiterleitung</strong> – wenn eine Version überflüssig ist (http auf https, www-Varianten, alte URLs). Die sauberste Lösung, wo möglich.</li>
+            <li><strong>Noindex</strong> – für Seiten, die existieren müssen, aber nicht ranken sollen (Druckversionen, interne Suchergebnisse, dünne Tag-Archive).</li>
+            <li><strong>Zusammenlegen und umschreiben</strong> – bei Kannibalisierung: Zwei ähnliche Seiten zu einer starken machen, die andere weiterleiten.</li>
+            <li><strong>Einzigartige Texte</strong> – bei Herstellerbeschreibungen und Stadtseiten: eigene Inhalte mit echtem Mehrwert statt Kopien.</li>
+            <li><strong>Konsistente interne Verlinkung</strong> – immer auf die kanonische Version verlinken, nie auf Varianten.</li>
+          </ul>
+          <h2>Was kein Duplicate Content ist</h2>
+          <p>Nicht jede Ähnlichkeit ist ein Problem. Navigation, Footer, Sidebar und rechtliche Hinweise sind auf jeder Seite gleich – Google erkennt Boilerplate und ignoriert es. Zitate, Produktdaten oder gesetzlich vorgeschriebene Texte sind unproblematisch, solange die Seite darüber hinaus eigenen Inhalt hat. Und Übersetzungen sind kein Duplicate Content, wenn sie per hreflang korrekt ausgezeichnet sind.</p>
+
+          <blockquote><strong>Kurz gesagt:</strong> Duplicate Content ist keine Strafe, sondern Verwirrung. Google weiß nicht, welche Version zählt – und gibt im Zweifel keiner den vollen Wert.</blockquote>
+        </article>
+
+        <aside class="glossar-aside">
+          <div class="glossar-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/canonical-tag/">Canonical-Tag</a></li>
+              <li><a href="/glossar/indexierung/">Indexierung</a></li>
+              <li><a href="/glossar/crawling/">Crawling</a></li>
+              <li><a href="/glossar/onpage-seo/">OnPage SEO</a></li>
+              <li><a href="/glossar/google-search-console/">Google Search Console</a></li>
+            </ul>
+          </div>
+          <div class="glossar-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/seo-beratung/">SEO-Audit buchen</a></li>
+              <li><a href="/seo-texte/">Einzigartige SEO Texte</a></li>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">FAQ</span>
+        <h2>Häufige Fragen zu Duplicate Content</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-question">Gibt es eine Google-Strafe für Duplicate Content?</summary><div class="faq-answer"><p>Nein, keine Penalty im eigentlichen Sinn. Google filtert Duplikate und zeigt eine Version. Eine manuelle Maßnahme gibt es nur bei bewusst manipulativem Kopieren fremder Inhalte in großem Stil. Der Schaden entsteht durch zersplitterte Signale und falsche Kanonisierung, nicht durch Bestrafung.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Ab wann gilt ein Text als Duplikat?</summary><div class="faq-answer"><p>Es gibt keinen festen Prozentwert. Google bewertet, ob der Hauptinhalt zweier Seiten im Wesentlichen derselbe ist. Ein ausgetauschter Ortsname bei sonst identischem Text zählt als Duplikat; zwei Artikel zum selben Thema mit eigenständigem Text nicht.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Was tun, wenn jemand meine Texte kopiert?</summary><div class="faq-answer"><p>Zuerst prüfen, ob Google deine Version als Original erkennt – meist ja, wenn sie zuerst indexiert wurde. Dann den Betreiber anschreiben. Bei Weigerung bleibt der Weg über eine DMCA-Meldung an Google oder rechtliche Schritte. Ein Canonical auf deine Seite setzt der Kopierer selten freiwillig.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Backlink-Strategie, die wirkt</h2>
+      <p>Lass uns gemeinsam ein Backlink-Setup entwickeln, das deine Domain langfristig stärkt – ohne riskante Shortcuts.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+491736133430" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>Freiberuflicher Journalist und SEO Freelancer aus Essen – für Unternehmen, die mit starkem Content sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-beratung/">SEO Beratung</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/prozessautomatisierung/">Prozessautomatisierung</a><a href="/local-seo-essen/">Local SEO Essen</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+491736133430">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>
