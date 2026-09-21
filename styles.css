@@ -4140,3 +4140,10 @@ h1 {
   .automation-preview-grid { grid-template-columns: 1fr; gap: 28px; }
   .automation-preview-content p { max-width: none; }
 }
+
+
+/* ==================== PAGE VISUAL (Bild unter Hero) ==================== */
+.page-visual { padding: 0 0 8px; margin-top: -16px; }
+.page-visual img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--color-border); }
+.page-visual figcaption { margin-top: 12px; font-size: 0.875rem; color: var(--color-subtext); text-align: center; }
+@media (max-width: 860px) { .page-visual { margin-top: 0; } .page-visual img { border-radius: var(--radius-md); } }
