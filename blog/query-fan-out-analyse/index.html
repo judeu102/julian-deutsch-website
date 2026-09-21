@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Query Fan-Out-Analyse: Anleitung für die KI-Suche 2026</title>
+  <meta name="description" content="Query Fan-Out erklärt: Wie Google AI Mode Anfragen in Teilfragen zerlegt – und wie du mit einer Fan-Out-Analyse Inhalte baust, die zitiert werden.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="author" content="Julian Deutsch">
+  <link rel="canonical" href="https://juliandeutsch.de/blog/query-fan-out-analyse/">
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="Query Fan-Out-Analyse: So denkt Googles KI-Suche – und so optimierst du dafür">
+  <meta property="og:description" content="Query Fan-Out erklärt: Wie Google AI Mode Anfragen in Teilfragen zerlegt – und wie du mit einer Fan-Out-Analyse Inhalte baust, die zitiert werden.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://juliandeutsch.de/blog/query-fan-out-analyse/">
+  <meta property="og:image" content="https://juliandeutsch.de/img/ki-antworten-quellen-og.jpg">
+  <meta property="og:locale" content="de_DE">
+  <meta property="article:published_time" content="2026-09-21">
+  <meta property="article:author" content="Julian Deutsch">
+  <meta property="article:section" content="KI &amp; GEO">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../../styles.css?v=20260921-tbl">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Query Fan-Out-Analyse: So denkt Googles KI-Suche – und so optimierst du dafür",
+  "description": "Query Fan-Out erklärt: Wie Google AI Mode Anfragen in Teilfragen zerlegt – und wie du mit einer Fan-Out-Analyse Inhalte baust, die zitiert werden.",
+  "image": "https://juliandeutsch.de/img/ki-antworten-quellen-og.jpg",
+  "datePublished": "2026-09-21",
+  "dateModified": "2026-09-21",
+  "inLanguage": "de",
+  "author": {
+    "@type": "Person",
+    "name": "Julian Deutsch",
+    "url": "https://juliandeutsch.de/ueber-mich/"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Julian Deutsch",
+    "url": "https://juliandeutsch.de"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://juliandeutsch.de/blog/query-fan-out-analyse/"
+  },
+  "about": [
+    {
+      "@type": "Thing",
+      "name": "Query Fan-Out"
+    },
+    {
+      "@type": "Thing",
+      "name": "Generative Engine Optimization"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://juliandeutsch.de/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Query Fan-Out-Analyse",
+      "item": "https://juliandeutsch.de/blog/query-fan-out-analyse/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Query Fan-Out?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Query Fan-Out ist die Technik, mit der Googles KI-Suche (AI Mode, AI Overviews) eine einzelne Suchanfrage in mehrere Teilfragen zerlegt, diese parallel an den Index schickt und aus den Ergebnissen eine zusammengesetzte Antwort baut. Google hat das Verfahren 2025 zur Einführung von AI Mode öffentlich beschrieben. Für Websites heißt das: Nicht die Seite rankt für ein Keyword, sondern einzelne Passagen werden für einzelne Teilfragen ausgewählt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist eine Fan-Out-Analyse?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eine Fan-Out-Analyse ist die Rekonstruktion der Teilfragen, die ein KI-Suchsystem zu einem Thema wahrscheinlich stellt. Aus Google-Daten (Ähnliche Fragen, Suggest, Search Console), aus KI-Systemen selbst und aus Kundengesprächen wird eine Liste von Teilfragen abgeleitet, klassifiziert und mit den bestehenden Inhalten abgeglichen. Die Lücken zeigen, welche Passagen fehlen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ersetzt Query Fan-Out die klassische Keyword-Recherche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, sie erweitert sie. Die Keyword-Recherche liefert weiterhin das Hauptthema, das Suchvolumen und die Suchintention. Die Fan-Out-Analyse geht eine Ebene tiefer und fragt, in welche Teilfragen dieses Thema zerlegt wird. Wer beides kombiniert, baut Inhalte, die sowohl klassisch ranken als auch in KI-Antworten zitiert werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Teilfragen erzeugt Google pro Anfrage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google nennt keine feste Zahl. Aus Googles eigener Beschreibung und aus Beobachtungen in AI Mode ergibt sich: Einfache Fragen erzeugen wenige Teilfragen, komplexe Vergleichs- oder Planungsfragen deutlich mehr. Für die Praxis ist die genaue Zahl unerheblich – entscheidend ist, dass die typischen Teilfragen-Typen abgedeckt sind: Definition, Ablauf, Kosten, Vergleich, Risiken, lokale Varianten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Brauche ich für jede Teilfrage eine eigene Seite?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Teilfragen, die zur selben Hauptintention gehören, werden als klar abgegrenzte Abschnitte auf einer Seite beantwortet – mit eigener Überschrift, einer direkten Antwort in den ersten Sätzen und einer zitierfähigen Struktur. Eigene Seiten braucht es nur für Teilfragen, die eine eigene Suchintention haben und für sich allein gesucht werden."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie messe ich, ob die Fan-Out-Optimierung wirkt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Über drei Signale: Impressionen in der Search Console für Long-Tail-Varianten des Themas, das Auftauchen der eigenen Domain in AI Overviews und AI Mode bei Testanfragen, und Erwähnungen in ChatGPT, Perplexity oder Gemini. Search Console weist AI-Mode-Impressionen nicht separat aus, aber steigende Impressionen bei sinkender Durchschnittsposition sind ein typisches Muster für Sichtbarkeit in KI-Features."
+      }
+    }
+  ]
+}
+  </script>
+  <script>
+    // GitHub-Pages Path-Rewriter: macht /foo/ zu /julian-deutsch-website/foo/
+    // Aktiviert sich NUR auf judeu102.github.io – bei localhost und custom domain passiert nichts
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu">
+              <a href="/seo-freelancer/">SEO Freelancer</a>
+              <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+              <a href="/seo-copywriting/">SEO Copywriting</a>
+              <a href="/ki-seo-geo/">KI &amp; GEO</a>
+              <a href="/chatgpt-ads/">ChatGPT Ads</a>
+              <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+            </div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/" class="active">Blog</a></li>
+          <li><a href="/glossar/">Glossar</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <details class="nav-mobile-group">
+        <summary>Leistungen</summary>
+        <a href="/seo-freelancer/">SEO Freelancer</a>
+        <a href="/seo-berater/">SEO-Berater</a>
+        <a href="/seo-beratung/">SEO Beratung</a>
+        <a href="/seo-experte/">SEO Experte</a>
+        <a href="/seo-texte/">SEO Texte</a>
+        <a href="/seo-copywriting/">SEO Copywriting</a>
+        <a href="/freelancer-suchmaschinenoptimierung/">Suchmaschinenoptimierung</a>
+        <a href="/ki-seo-geo/">KI &amp; GEO</a>
+        <a href="/chatgpt-ads/">ChatGPT Ads</a>
+        <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+      </details>
+      <details class="nav-mobile-group">
+        <summary>Regionen</summary>
+        <a href="/seo-essen/">SEO Essen</a>
+        <a href="/local-seo-essen/">Local SEO Essen</a>
+        <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+        <a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a>
+        <a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a>
+        <a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a>
+        <a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a>
+      </details>
+      <a href="/ueber-mich/">Über mich</a>
+      <a href="/referenzen/">Referenzen</a>
+      <a href="/blog/">Blog</a>
+      <a href="/glossar/">Glossar</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/blog/">Blog</a><span class="breadcrumb-sep">/</span><span>Query Fan-Out-Analyse</span>
+    </div>
+  </div>
+
+  <section class="article-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Blog · KI &amp; GEO</span>
+        <h1>Query Fan-Out-Analyse: So denkt Googles KI-Suche – und so optimierst du dafür</h1>
+        <div class="article-meta">
+          <span class="article-category">KI &amp; GEO</span>
+          <span>Veröffentlicht: 21. September 2026</span>
+          <span class="article-meta-sep">·</span>
+          <span>14 min Lesezeit</span>
+          <span class="article-meta-sep">·</span>
+          <span>von Julian Deutsch</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <figure class="page-visual">
+    <div class="container">
+      <img src="../../img/ki-antworten-quellen-1600.webp" srcset="../../img/ki-antworten-quellen-800.webp 800w, ../../img/ki-antworten-quellen-1600.webp 1600w" sizes="(max-width: 1200px) 100vw, 1140px" width="1600" height="900" alt="Sprechblase, die mit drei Dokumenten verbunden ist – Symbol für eine KI-Antwort, die aus mehreren Quellen zusammengesetzt wird" loading="eager" fetchpriority="high" decoding="async">
+      <figcaption>Query Fan-Out: Eine Anfrage wird in Teilfragen zerlegt, die Antwort aus mehreren Quellen zusammengesetzt.</figcaption>
+    </div>
+  </figure>
+
+  <section class="article-detail">
+    <div class="container">
+      <div class="article-layout">
+        <article class="article-content">
+          <p>Wer 2026 nur noch fragt „Für welches Keyword rankt meine Seite?“, stellt die falsche Frage. Googles KI-Suche stellt eine andere: „Welche Passage beantwortet welche Teilfrage am besten?“ Dahinter steckt ein Verfahren namens <strong>Query Fan-Out</strong> – und wer es versteht, baut Inhalte, die in AI Mode, AI Overviews und den KI-Assistenten zitiert werden. Dieser Artikel erklärt die Mechanik, zeigt die Methode der Fan-Out-Analyse Schritt für Schritt und spielt sie an einem echten Beispiel durch.</p>
+
+          <div class="article-toc">
+            <h4>Inhalt</h4>
+            <ol>
+              <li><a href="#definition">Was Query Fan-Out ist</a></li>
+              <li><a href="#warum">Warum das SEO grundlegend verändert</a></li>
+              <li><a href="#analyse">Was eine Fan-Out-Analyse leistet</a></li>
+              <li><a href="#anleitung">Anleitung: Fan-Out-Analyse in sieben Schritten</a></li>
+              <li><a href="#beispiel">Beispiel: „SEO Freelancer beauftragen“ zerlegt</a></li>
+              <li><a href="#architektur">Content-Architektur für Fan-Out</a></li>
+              <li><a href="#fehler">Sieben typische Fehler</a></li>
+              <li><a href="#tools">Werkzeuge und Datenquellen</a></li>
+              <li><a href="#ranking">Fan-Out und klassisches Ranking</a></li>
+              <li><a href="#fazit">Fazit</a></li>
+            </ol>
+          </div>
+
+          <h2 id="definition">Was Query Fan-Out ist</h2>
+          <p>Klassische Suche funktioniert eindimensional: Eine Anfrage, ein Abgleich mit dem Index, eine Liste von zehn Seiten. <strong>Query Fan-Out</strong> bricht damit. Google hat das Verfahren 2025 mit der Einführung von AI Mode öffentlich beschrieben: Die KI zerlegt eine Anfrage in mehrere Teilfragen („sub-queries“), schickt sie <em>parallel</em> an den Index – teils in Web-Suche, teils in Knowledge Graph, Shopping-Daten oder Maps –, sammelt die Ergebnisse ein und komponiert daraus eine einzige Antwort mit Quellenangaben.</p>
+          <p>Ein Beispiel macht es greifbar. Die Anfrage „Lohnt sich ein SEO Freelancer für ein kleines Unternehmen?“ wird nicht als ein String verarbeitet. Das System fragt sich sinngemäß:</p>
+          <ul>
+            <li>Was macht ein SEO Freelancer überhaupt?</li>
+            <li>Was kostet ein SEO Freelancer im Vergleich zu einer Agentur?</li>
+            <li>Welche Ergebnisse sind für kleine Unternehmen realistisch?</li>
+            <li>Wann lohnt sich SEO für ein kleines Unternehmen nicht?</li>
+            <li>Worauf sollte man bei der Auswahl achten?</li>
+          </ul>
+          <p>Jede dieser Teilfragen bekommt eigene Treffer. Und jetzt der entscheidende Punkt: <strong>Die Treffer sind keine Seiten, sondern Passagen.</strong> Ein Absatz aus deinem Kostenartikel, ein Abschnitt aus einer Leistungsseite, eine FAQ-Antwort aus einem Glossar – das System pickt sich heraus, was die jeweilige Teilfrage am präzisesten beantwortet. Die fertige Antwort zitiert dann fünf, acht oder zwölf Quellen, von denen keine für die ursprüngliche Anfrage auf Platz 1 stehen muss.</p>
+          <p>Der Begriff „Fan-Out“ kommt aus der Informatik: Ein Signal verzweigt sich in viele parallele Pfade („fächert auf“) und wird anschließend wieder zusammengeführt. Genau das passiert hier mit deiner Suchanfrage. Google nutzt das Verfahren in <a href="/glossar/ai-overviews/">AI Overviews</a> und in AI Mode; die Assistenten von OpenAI, Perplexity und Anthropic arbeiten mit vergleichbaren Mechaniken, wenn sie Websuche einsetzen.</p>
+
+          <h2 id="warum">Warum das SEO grundlegend verändert</h2>
+          <p>Drei Konsequenzen, die jede Content-Strategie betreffen:</p>
+          <h3>1. Ranking und Sichtbarkeit fallen auseinander</h3>
+          <p>Bisher galt: Wer auf Platz 1 steht, wird gesehen. Im Fan-Out-Modell kann eine Seite auf Platz 14 für das Hauptkeyword stehen und trotzdem zitiert werden – weil ein Absatz die Teilfrage „Was kostet…“ besser beantwortet als alles auf Seite eins. Umgekehrt kann Platz 1 leer ausgehen, wenn die Seite zwar breit, aber nirgends präzise ist. Das erklärt ein Muster, das ich in Search-Console-Daten inzwischen regelmäßig sehe: <strong>steigende Impressionen bei sinkender Durchschnittsposition</strong>. Die Seite taucht in KI-Features für Long-Tail-Varianten auf, die früher nie ein Ranking ausgelöst hätten.</p>
+          <h3>2. Die Passage ist die neue Einheit</h3>
+          <p>Google bewertet seit dem Passage-Ranking-Update 2021 einzelne Abschnitte. Fan-Out macht daraus das Grundprinzip. Ein Abschnitt muss für sich allein stehen können: eigene Überschrift, die Teilfrage im Wortlaut, Antwort in den ersten zwei Sätzen, dann Begründung. Ein 3.000-Wörter-Artikel, der alles irgendwo erwähnt, aber nichts sauber abgrenzt, liefert dem System keine extrahierbaren Einheiten.</p>
+          <h3>3. Themenabdeckung schlägt Keyword-Dichte</h3>
+          <p>Wenn eine Anfrage in acht Teilfragen zerlegt wird und deine Website sechs davon beantwortet, bist du der wahrscheinlichste Kandidat für die Zusammensetzung der Antwort. Das ist der Mechanismus hinter <a href="/glossar/topical-authority/">Topical Authority</a> – nur jetzt messbar auf Ebene einzelner Anfragen. Wer nur die Hauptfrage bedient, konkurriert um einen Platz von acht. Wer den Fan-Out abdeckt, konkurriert um sechs.</p>
+
+          <h2 id="analyse">Was eine Fan-Out-Analyse leistet</h2>
+          <p>Eine <strong>Fan-Out-Analyse</strong> ist der Versuch, die Teilfragen zu rekonstruieren, die ein KI-System zu deinem Thema wahrscheinlich stellt – bevor du Inhalte planst. Sie sitzt zwischen klassischer <a href="/glossar/keyword-recherche/">Keyword-Recherche</a> und Content-Briefing:</p>
+          <ul>
+            <li>Die <strong>Keyword-Recherche</strong> sagt: „SEO Beratung“ hat 5.600 Suchanfragen im Monat und transaktionale Absicht.</li>
+            <li>Die <strong>Fan-Out-Analyse</strong> sagt: Wer das fragt, will implizit wissen, was Beratung umfasst, was sie kostet, wie lange sie dauert, wann sie sich nicht lohnt, wie sie sich von Agentur und Freelancer unterscheidet, und ob sie remote geht.</li>
+            <li>Das <strong>Briefing</strong> übersetzt das in Abschnitte, jeder mit Überschrift, Kernaussage und Belegen.</li>
+          </ul>
+          <p>Niemand außerhalb von Google kennt die exakten Teilfragen. Aber sie sind nicht zufällig. Sie folgen den Mustern, wie Menschen ein Thema erkunden – und diese Muster sind aus Google-Daten, aus den KI-Systemen selbst und aus Kundengesprächen gut rekonstruierbar. Die Analyse ist deshalb keine Spekulation, sondern strukturierte Annäherung mit mehreren Quellen.</p>
+
+          <h2 id="anleitung">Anleitung: Fan-Out-Analyse in sieben Schritten</h2>
+          <h3>Schritt 1: Hauptanfrage als Frage formulieren</h3>
+          <p>Nicht „SEO Beratung“, sondern „Lohnt sich SEO Beratung für mein Unternehmen, und wie finde ich die richtige?“ – so, wie jemand es in AI Mode tippen würde. KI-Suche bekommt längere, natürlichere Anfragen als die klassische Suche. Die Formulierung als Frage macht die impliziten Teilfragen sichtbar.</p>
+          <h3>Schritt 2: Teilfragen aus Google-Daten sammeln</h3>
+          <p>Drei kostenlose Quellen, die Googles eigene Sicht auf das Thema zeigen:</p>
+          <ul>
+            <li><strong>„Ähnliche Fragen“</strong> (People also ask) in den Suchergebnissen – jede aufgeklappte Frage lädt neue nach. Zehn Minuten Klicken liefern 30 bis 50 Teilfragen.</li>
+            <li><strong>Google Suggest</strong> – die Autovervollständigung für „[Thema] wie“, „[Thema] was“, „[Thema] wann“, „[Thema] vs“, „[Thema] kosten“.</li>
+            <li><strong>Search Console</strong> – alle Suchanfragen, für die deine Seiten zum Thema bereits Impressionen bekommen, gefiltert nach Fragewörtern. Das sind Teilfragen, die Google dir bereits zutraut.</li>
+          </ul>
+          <h3>Schritt 3: Die KI-Systeme selbst befragen</h3>
+          <p>Stelle die Hauptanfrage in Google AI Mode, in ChatGPT mit Websuche, in Perplexity und in Gemini. Beobachte nicht nur die Antwort, sondern ihre <em>Struktur</em>: Welche Unterüberschriften bildet das System? Welche Aspekte behandelt es in welcher Reihenfolge? Welche Quellen zitiert es für welchen Teil? Das ist der direkteste Blick auf den Fan-Out, den es gibt. Ergänzend kannst du das System bitten, die Frage in Teilfragen zu zerlegen – das Ergebnis ist eine brauchbare Hypothese, kein Beweis.</p>
+          <h3>Schritt 4: Teilfragen klassifizieren</h3>
+          <p>Aus meiner Praxis lassen sich fast alle Teilfragen sieben Typen zuordnen. Die Klassifizierung zeigt, welche Typen dein Content bisher ignoriert:</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Typ</th><th>Beispiel-Teilfrage</th><th>Passendes Format</th></tr></thead>
+              <tbody>
+                <tr><td>Definition</td><td>Was ist SEO Beratung?</td><td>Zwei Sätze, direkt unter der Überschrift</td></tr>
+                <tr><td>Ablauf</td><td>Wie läuft eine Beratung ab?</td><td>Nummerierte Schritte</td></tr>
+                <tr><td>Kosten</td><td>Was kostet SEO Beratung?</td><td>Spannen, Modelle, Einflussfaktoren</td></tr>
+                <tr><td>Vergleich</td><td>Berater vs. Agentur vs. Freelancer?</td><td>Tabelle oder Gegenüberstellung</td></tr>
+                <tr><td>Eignung</td><td>Für wen lohnt es sich (nicht)?</td><td>Liste mit Kriterien</td></tr>
+                <tr><td>Risiko</td><td>Woran erkenne ich unseriöse Anbieter?</td><td>Warnsignale, Checkliste</td></tr>
+                <tr><td>Lokal / Kontext</td><td>SEO Beratung in Essen?</td><td>Regionaler Abschnitt oder eigene Seite</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Schritt 5: Bestehende Inhalte mappen</h3>
+          <p>Jede Teilfrage bekommt eine Spalte: Welche URL beantwortet sie heute? In welchem Abschnitt? Wie direkt? Drei Bewertungen reichen: „beantwortet“, „erwähnt“, „fehlt“. Das Ergebnis ist die Fan-Out-Lücke – meist überraschend groß, weil viele Seiten das Thema behandeln, aber keine die Teilfragen sauber abgrenzt.</p>
+          <h3>Schritt 6: Entscheiden – Abschnitt oder eigene Seite</h3>
+          <p>Teilfragen mit derselben Hauptintention werden Abschnitte auf einer Seite. Teilfragen, die für sich allein gesucht werden und eine eigene Absicht haben („Was kostet ein SEO Freelancer?“ wird auch ohne Beratungskontext gesucht), bekommen eine eigene Seite, die von der Hauptseite verlinkt wird. Faustregel: Hat die Teilfrage eigenes Suchvolumen und eine eigene Antwortlänge von mehr als 300 Wörtern, ist sie eine Seite. Sonst ein Abschnitt.</p>
+          <h3>Schritt 7: Passagen zitierfähig schreiben</h3>
+          <p>Für jeden Abschnitt gilt dasselbe Muster: Überschrift enthält die Teilfrage. Erster Satz beantwortet sie vollständig. Zweiter Satz nennt die wichtigste Einschränkung oder Bedingung. Danach Begründung, Beispiel, Zahl. Kein Abschnitt beginnt mit „In diesem Abschnitt erfahren Sie…“ – das System sucht Antworten, keine Ankündigungen. Wie man solche Texte schreibt, steht ausführlich im Glossar unter <a href="/glossar/seo-text/">SEO-Text</a>.</p>
+
+          <h2 id="beispiel">Beispiel: „SEO Freelancer beauftragen“ zerlegt</h2>
+          <p>Ich habe die Methode auf mein eigenes Kernthema angewendet. Hauptanfrage, wie sie in AI Mode gestellt wird: „Ich habe ein kleines Unternehmen und überlege, einen SEO Freelancer zu beauftragen – worauf muss ich achten?“ Aus Ähnlichen Fragen, Suggest, Search Console und vier KI-Systemen ergab sich dieser Fan-Out (gekürzt auf die Teilfragen, die in mindestens zwei Quellen auftauchten):</p>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>Teilfrage</th><th>Typ</th><th>Stand vorher</th><th>Maßnahme</th></tr></thead>
+              <tbody>
+                <tr><td>Was macht ein SEO Freelancer konkret?</td><td>Definition</td><td>beantwortet</td><td><a href="/blog/was-macht-ein-seo-freelancer/">Artikel</a> bestehend</td></tr>
+                <tr><td>Was kostet ein SEO Freelancer?</td><td>Kosten</td><td>beantwortet</td><td><a href="/blog/seo-freelancer-kosten/">Artikel</a> bestehend</td></tr>
+                <tr><td>Freelancer oder Agentur – was passt zu KMU?</td><td>Vergleich</td><td>beantwortet</td><td><a href="/blog/seo-freelancer-vs-agentur/">Artikel</a> bestehend</td></tr>
+                <tr><td>Lohnt sich SEO für kleine Unternehmen überhaupt?</td><td>Eignung</td><td>erwähnt</td><td>Eigene Seite <a href="/seo-fuer-kleine-unternehmen/">SEO für kleine Unternehmen</a> gebaut</td></tr>
+                <tr><td>Wie lange dauert es bis zu Ergebnissen?</td><td>Ablauf</td><td>verstreut</td><td>FAQ-Abschnitte auf Leistungsseiten ergänzt</td></tr>
+                <tr><td>Woran erkenne ich einen guten Freelancer?</td><td>Risiko</td><td>fehlte</td><td>Abschnitt im Glossar <a href="/glossar/suchmaschinenoptimierer/">Suchmaschinenoptimierer</a></td></tr>
+                <tr><td>Was ist der Unterschied zwischen Beratung und Umsetzung?</td><td>Vergleich</td><td>fehlte</td><td>Eigene Seite <a href="/seo-beratung/">SEO Beratung</a>, abgegrenzt vom Berater-Profil</td></tr>
+                <tr><td>Gibt es SEO Freelancer in meiner Nähe?</td><td>Lokal</td><td>beantwortet</td><td>Stadtseiten bestehend</td></tr>
+              </tbody>
+            </table>
+            </div>
+          <p>Drei von acht Teilfragen waren Lücken. Keine davon hatte ein Keyword, das in einer klassischen Recherche als Prioriät aufgefallen wäre – „Woran erkenne ich einen guten SEO Freelancer“ hat kaum messbares Suchvolumen. Aber es ist eine Teilfrage, die das System bei fast jeder Beauftragungsfrage mitstellt. Wer sie beantwortet, sitzt in der zusammengesetzten Antwort.</p>
+
+          <h2 id="architektur">Content-Architektur für Fan-Out</h2>
+          <p>Zwei Modelle konkurrieren, und die richtige Antwort ist meist eine Mischung:</p>
+          <p><strong>Die lange Hub-Seite.</strong> Alle Teilfragen als Abschnitte auf einer URL. Vorteil: Das System findet alles an einem Ort, die Seite baut Autorität für das ganze Thema auf. Nachteil: Abschnitte konkurrieren um Aufmerksamkeit, Teilfragen mit eigener Absicht werden nicht optimal bedient.</p>
+          <p><strong>Der Cluster.</strong> Eine <a href="/glossar/pillar-page/">Pillar Page</a> für die Hauptfrage, eigene Seiten für Teilfragen mit eigener Intention, alles per <a href="/glossar/interne-verlinkung/">interner Verlinkung</a> verbunden. Vorteil: Jede Seite ist fokussiert, jede Teilfrage bekommt Tiefe. Nachteil: Mehr Pflege, Kannibalisierungsrisiko bei unsauberer Abgrenzung.</p>
+          <p>Meine Regel aus der Praxis: Hub-Seite mit allen Teilfragen als Kurzabschnitte (je 100 bis 200 Wörter, direkte Antwort), plus eigene Seiten für die drei bis fünf Teilfragen, die eigenes Suchvolumen haben. Die Kurzabschnitte auf dem Hub verlinken auf die Tiefe. So bekommt das System an beiden Stellen extrahierbare Passagen – und der Leser, der mehr will, findet den Weg.</p>
+          <p>Dazu kommen drei technische Bausteine, die die Extraktion erleichtern: <a href="/glossar/schema-org/">strukturierte Daten</a> für FAQ und Artikel, eine <a href="/glossar/llms-txt/">llms.txt</a> als Wegweiser für KI-Crawler, und konsistente Entitäten – dein Name, dein Unternehmen, dein Standort, deine Leistungen müssen auf jeder Seite identisch benannt sein, damit das System sie einer Quelle zuordnen kann.</p>
+
+          <h2 id="fehler">Sieben typische Fehler</h2>
+          <ol>
+            <li><strong>Nur die Hauptfrage optimieren.</strong> Die Seite rankt vielleicht klassisch, liefert dem Fan-Out aber nur eine von acht Passagen.</li>
+            <li><strong>Antworten verstecken.</strong> Die Kosten stehen im vierten Absatz nach drei Absätzen Einleitung. Das System nimmt die Quelle, die sie im ersten Satz nennt.</li>
+            <li><strong>Überschriften ohne Frage.</strong> „Unsere Leistungen“ statt „Was umfasst eine SEO Beratung?“. Die Überschrift ist das Signal, welche Teilfrage der Abschnitt beantwortet.</li>
+            <li><strong>Alles auf eine Seite pressen.</strong> Teilfragen mit eigener Absicht verlieren Tiefe, wenn sie als 80-Wort-Abschnitt abgehandelt werden.</li>
+            <li><strong>Alles auf eigene Seiten verteilen.</strong> Zwanzig dünne Seiten zu einem Thema ohne Hub – das System findet keine Autorität, der Leser keinen Einstieg.</li>
+            <li><strong>Inkonsistente Entitäten.</strong> Auf einer Seite „SEO-Berater“, auf der nächsten „SEO Consultant“, im Schema „SEO Freelancer“. Das System kann die Quelle nicht sauber zuordnen.</li>
+            <li><strong>Einmal analysieren, nie wiederholen.</strong> Der Fan-Out verändert sich mit den Modellen. Eine Analyse pro Quartal für die Kernthemen ist der realistische Rhythmus.</li>
+          </ol>
+
+          <h2 id="tools">Werkzeuge und Datenquellen</h2>
+          <p>Die Analyse braucht kein teures Tool. Was ich verwende, in absteigender Wichtigkeit:</p>
+          <ul>
+            <li><strong>Google AI Mode und AI Overviews</strong> – direkte Beobachtung, kostenlos. Testanfragen stellen, Struktur und Quellen notieren.</li>
+            <li><strong>Google Search Console</strong> – Suchanfragen nach Fragewörtern filtern; das Muster „Impressionen steigen, Position sinkt“ als Indikator für KI-Sichtbarkeit lesen. Mehr im Glossar zur <a href="/glossar/google-search-console/">Search Console</a>.</li>
+            <li><strong>Ähnliche Fragen und Suggest</strong> – die Rohquelle für Teilfragen, ebenfalls kostenlos.</li>
+            <li><strong>ChatGPT, Perplexity, Gemini, Claude</strong> – zum Rekonstruieren der Zerlegung und zum Prüfen, ob die eigene Domain zitiert wird.</li>
+            <li><strong>SEO-Suiten</strong> – Sistrix, Semrush und Ahrefs bauen Funktionen für KI-Sichtbarkeit aus; sie ersetzen die manuelle Beobachtung nicht, beschleunigen aber das Monitoring über viele Themen. Einen Überblick gibt der Artikel zu <a href="/blog/seo-tools/">SEO-Tools</a>.</li>
+            <li><strong>Eine Tabelle</strong> – Teilfrage, Typ, Quelle der Teilfrage, bestehende URL, Bewertung, Maßnahme. Mehr braucht die Analyse nicht.</li>
+          </ul>
+
+          <h2 id="ranking">Fan-Out und klassisches Ranking</h2>
+          <p>Eine häufige Sorge: Macht Fan-Out-Optimierung die klassische Suche kaputt? Das Gegenteil ist der Fall. Die Eigenschaften, die eine Passage zitierfähig machen – klare Überschriften, direkte Antworten, vollständige Themenabdeckung, konsistente Entitäten, strukturierte Daten – sind dieselben, die Google seit den Helpful-Content-Updates auch in der klassischen Suche belohnt. Eine Seite, die den Fan-Out abdeckt, hat mehr Long-Tail-Rankings, mehr <a href="/glossar/rich-snippet/">Rich Snippets</a> und stabilere Positionen nach <a href="/glossar/google-core-update/">Core Updates</a>.</p>
+          <p>Was sich ändert, ist die Messung. Wer nur die Position für das Hauptkeyword verfolgt, übersieht die Sichtbarkeit in KI-Features vollständig. Die relevante Kennzahl wird: Für wie viele Teilfragen des Themas ist die eigene Domain die zitierte Quelle? Das lässt sich heute nur manuell über Testanfragen erfassen – und genau deshalb ist es ein Vorsprung für alle, die es tun.</p>
+          <p>Wie das mit der übergeordneten Disziplin zusammenhängt, steht im Artikel <a href="/blog/was-ist-geo/">Was ist GEO?</a> und im Vergleich <a href="/blog/geo-vs-seo/">GEO vs. SEO</a>. Für Unternehmen, die das strukturiert angehen wollen, ist die Fan-Out-Analyse fester Teil meiner Leistung <a href="/ki-seo-geo/">KI &amp; GEO</a>.</p>
+
+          <h2 id="fazit">Fazit</h2>
+          <p>Query Fan-Out ist keine Google-Spielerei, sondern das Grundprinzip, nach dem KI-Suche Antworten baut: Anfrage zerlegen, Passagen einsammeln, Antwort komponieren. Die Fan-Out-Analyse macht dieses Prinzip für die Content-Planung nutzbar – mit kostenlosen Datenquellen, einer Tabelle und einer Stunde Arbeit pro Kernthema. Das Ergebnis sind Inhalte, die nicht nur für ein Keyword ranken, sondern für die Teilfragen dahinter zitiert werden. Wer das heute für seine fünf wichtigsten Themen tut, ist den meisten Wettbewerbern zwei Jahre voraus.</p>
+
+          <div class="author-box">
+            <img src="../../julian-deutsch-portrait-2.webp" alt="Julian Deutsch">
+            <div class="author-box-content">
+              <h4>Über den Autor</h4>
+              <h5>Julian Deutsch</h5>
+              <p>SEO- &amp; KI-Experte aus Essen mit journalistischem Background. 10 Jahre Digital-Marketing, 1.500+ publizierte Artikel quer durch alle Branchen. <a href="/ueber-mich/">Mehr über mich →</a></p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="article-aside">
+          <div class="article-aside-card">
+            <h4>Verwandte Begriffe</h4>
+            <ul>
+              <li><a href="/glossar/ai-overviews/">AI Overviews</a></li>
+              <li><a href="/glossar/geo/">GEO</a></li>
+              <li><a href="/glossar/keyword-recherche/">Keyword-Recherche</a></li>
+              <li><a href="/glossar/topical-authority/">Topical Authority</a></li>
+              <li><a href="/glossar/llm/">LLM</a></li>
+            </ul>
+          </div>
+          <div class="article-aside-card">
+            <h4>Service</h4>
+            <ul>
+              <li><a href="/ki-seo-geo/">KI-Content &amp; GEO</a></li>
+              <li><a href="/seo-beratung/">SEO Beratung</a></li>
+              <li><a href="/seo-freelancer/">SEO Freelancer buchen</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">FAQ</span>
+        <h2>Häufige Fragen zu Query Fan-Out</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-question">Was ist Query Fan-Out?</summary><div class="faq-answer"><p>Query Fan-Out ist die Technik, mit der Googles KI-Suche (AI Mode, AI Overviews) eine einzelne Suchanfrage in mehrere Teilfragen zerlegt, diese parallel an den Index schickt und aus den Ergebnissen eine zusammengesetzte Antwort baut. Google hat das Verfahren 2025 zur Einführung von AI Mode öffentlich beschrieben. Für Websites heißt das: Nicht die Seite rankt für ein Keyword, sondern einzelne Passagen werden für einzelne Teilfragen ausgewählt.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Was ist eine Fan-Out-Analyse?</summary><div class="faq-answer"><p>Eine Fan-Out-Analyse ist die Rekonstruktion der Teilfragen, die ein KI-Suchsystem zu einem Thema wahrscheinlich stellt. Aus Google-Daten (Ähnliche Fragen, Suggest, Search Console), aus KI-Systemen selbst und aus Kundengesprächen wird eine Liste von Teilfragen abgeleitet, klassifiziert und mit den bestehenden Inhalten abgeglichen. Die Lücken zeigen, welche Passagen fehlen.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Ersetzt Query Fan-Out die klassische Keyword-Recherche?</summary><div class="faq-answer"><p>Nein, sie erweitert sie. Die Keyword-Recherche liefert weiterhin das Hauptthema, das Suchvolumen und die Suchintention. Die Fan-Out-Analyse geht eine Ebene tiefer und fragt, in welche Teilfragen dieses Thema zerlegt wird. Wer beides kombiniert, baut Inhalte, die sowohl klassisch ranken als auch in KI-Antworten zitiert werden.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Wie viele Teilfragen erzeugt Google pro Anfrage?</summary><div class="faq-answer"><p>Google nennt keine feste Zahl. Aus Googles eigener Beschreibung und aus Beobachtungen in AI Mode ergibt sich: Einfache Fragen erzeugen wenige Teilfragen, komplexe Vergleichs- oder Planungsfragen deutlich mehr. Für die Praxis ist die genaue Zahl unerheblich – entscheidend ist, dass die typischen Teilfragen-Typen abgedeckt sind: Definition, Ablauf, Kosten, Vergleich, Risiken, lokale Varianten.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Brauche ich für jede Teilfrage eine eigene Seite?</summary><div class="faq-answer"><p>Nein. Teilfragen, die zur selben Hauptintention gehören, werden als klar abgegrenzte Abschnitte auf einer Seite beantwortet – mit eigener Überschrift, einer direkten Antwort in den ersten Sätzen und einer zitierfähigen Struktur. Eigene Seiten braucht es nur für Teilfragen, die eine eigene Suchintention haben und für sich allein gesucht werden.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Wie messe ich, ob die Fan-Out-Optimierung wirkt?</summary><div class="faq-answer"><p>Über drei Signale: Impressionen in der Search Console für Long-Tail-Varianten des Themas, das Auftauchen der eigenen Domain in AI Overviews und AI Mode bei Testanfragen, und Erwähnungen in ChatGPT, Perplexity oder Gemini. Search Console weist AI-Mode-Impressionen nicht separat aus, aber steigende Impressionen bei sinkender Durchschnittsposition sind ein typisches Muster für Sichtbarkeit in KI-Features.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="related-articles">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">Weiterlesen</span>
+        <h2>Mehr zu KI-Suche und GEO</h2>
+      </div>
+      <div class="related-articles-grid">
+        <a href="/blog/was-ist-geo/" class="related-article-card">
+          <span class="insight-tag">KI &amp; GEO</span>
+          <h3>Was ist GEO? Generative Engine Optimization erklärt</h3>
+          <p>Sichtbarkeit in ChatGPT, Perplexity und Google AI Overviews – die Disziplin hinter der Fan-Out-Analyse.</p>
+        </a>
+        <a href="/blog/google-io-2026-ki-suche/" class="related-article-card">
+          <span class="insight-tag">KI &amp; GEO</span>
+          <h3>Google I/O 2026: Was die KI-Suche für SEO bedeutet</h3>
+          <p>AI Mode, AI Overviews und die neuen Regeln für Sichtbarkeit – die Ankündigungen eingeordnet.</p>
+        </a>
+        <a href="/blog/chatgpt-seo/" class="related-article-card">
+          <span class="insight-tag">KI &amp; GEO</span>
+          <h3>ChatGPT und SEO</h3>
+          <p>Wie Sprachmodelle Quellen auswählen und was das für deine Inhalte bedeutet.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Sichtbar in ChatGPT, Perplexity und Co.</h2>
+      <p>Ich begleite dich bei der GEO-Strategie – mit klaren Workflows und messbaren Ergebnissen.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+491736133430" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>SEO- &amp; KI-Experte aus Essen mit journalistischem Background – für Unternehmen, die mit starkem Content und modernen Prozessen sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-beratung/">SEO Beratung</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/chatgpt-ads/">ChatGPT Ads</a><a href="/prozessautomatisierung/">Prozessautomatisierung</a><a href="/local-seo-essen/">Local SEO Essen</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+491736133430">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    // Close mobile nav when a link is clicked
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+</body>
+</html>

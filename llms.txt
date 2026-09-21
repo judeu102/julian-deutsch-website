@@ -87,3 +87,4 @@
 - https://juliandeutsch.de/glossar/local-pack/ – Top-3-Box im Local SEO
 - https://juliandeutsch.de/glossar/nap/ – Name, Address, Phone fuer Local SEO
 - https://juliandeutsch.de/glossar/prompt/ – Anweisung an ein KI-Sprachmodell
+- https://juliandeutsch.de/blog/query-fan-out-analyse/ – Query Fan-Out-Analyse: Wie KI-Suche Anfragen in Teilfragen zerlegt und wie man Inhalte dafür baut (Anleitung, Beispiel)

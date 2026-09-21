@@ -4147,3 +4147,11 @@ h1 {
 .page-visual img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--color-border); }
 .page-visual figcaption { margin-top: 12px; font-size: 0.875rem; color: var(--color-subtext); text-align: center; }
 @media (max-width: 860px) { .page-visual { margin-top: 0; } .page-visual img { border-radius: var(--radius-md); } }
+
+
+/* ==================== TABELLEN IM ARTIKEL ==================== */
+.table-wrap { overflow-x: auto; margin: 20px 0 28px; -webkit-overflow-scrolling: touch; }
+.article-content table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; line-height: 1.5; }
+.article-content th, .article-content td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+.article-content th { background: var(--color-surface); font-weight: 600; white-space: nowrap; }
+.article-content td:first-child { font-weight: 500; }
