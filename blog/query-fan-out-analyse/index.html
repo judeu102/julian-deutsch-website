@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://formspree.io https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Query Fan-Out-Analyse: Anleitung für die KI-Suche 2026</title>
   <meta name="description" content="Query Fan-Out erklärt: Wie Google AI Mode Anfragen in Teilfragen zerlegt – und wie du mit einer Fan-Out-Analyse Inhalte baust, die zitiert werden.">
@@ -28,7 +28,7 @@
   <meta property="article:author" content="Julian Deutsch">
   <meta property="article:section" content="KI &amp; GEO">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../../styles.css?v=20260921-tbl">
+  <link rel="stylesheet" href="../../styles.css?v=20260922-consent">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -502,7 +502,7 @@
         <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/kontakt/">Kontakt</a></div>
         <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+491736133430">+49 (0) 173 6133430</a></div>
       </div>
-      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a></div></div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a><a href="#" data-consent-open>Cookie-Einstellungen</a></div></div>
     </div>
   </footer>
 
@@ -533,5 +533,6 @@
       });
     });
   </script>
+  <script src="/consent.js" defer></script>
 </body>
 </html>
