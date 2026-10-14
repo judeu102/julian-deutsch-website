@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://formspree.io https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>SERP-Snippet-Vorschau: Title & Meta-Description testen | Tool</title>
+  <meta name="description" content="Kostenlose SERP-Vorschau: Title-Tag und Meta-Description wie bei Google prüfen – Desktop und Mobil, Pixelbreite statt Zeichen, Warnung bei Abschneiden.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://juliandeutsch.de/tools/serp-snippet-vorschau/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0B1D3A">
+  <meta property="og:title" content="SERP-Snippet-Vorschau: Title & Meta-Description testen">
+  <meta property="og:description" content="Kostenlose SERP-Vorschau: Title-Tag und Meta-Description wie bei Google prüfen – Desktop und Mobil, Pixelbreite statt Zeichen, Warnung bei Abschneiden.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juliandeutsch.de/tools/serp-snippet-vorschau/">
+  <meta property="og:image" content="https://juliandeutsch.de/img/seo-analyse-audit-og.jpg">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="../../styles.css?v=20261014-tools">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "SERP-Snippet-Vorschau",
+  "url": "https://juliandeutsch.de/tools/serp-snippet-vorschau/",
+  "applicationCategory": "SEO Tool",
+  "operatingSystem": "Web",
+  "browserRequirements": "Requires JavaScript",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "description": "Kostenlose Vorschau von Title-Tag und Meta-Description wie bei Google – Desktop und Mobil, Pixelbreite statt Zeichenzahl, Warnung bei Abschneiden.",
+  "author": {
+    "@type": "Person",
+    "name": "Julian Deutsch",
+    "url": "https://juliandeutsch.de/ueber-mich/"
+  },
+  "inLanguage": "de"
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Start",
+      "item": "https://juliandeutsch.de/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "SEO-Tools",
+      "item": "https://juliandeutsch.de/tools/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "SERP-Snippet-Vorschau",
+      "item": "https://juliandeutsch.de/tools/serp-snippet-vorschau/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie lang darf ein Title-Tag sein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google schneidet Titles nicht nach Zeichen, sondern nach Pixelbreite ab: auf dem Desktop bei etwa 580 Pixeln, auf dem Smartphone bei etwa 920 Pixeln über zwei Zeilen. Das entspricht grob 55 bis 65 Zeichen, hängt aber stark von den Buchstaben ab – ein „W“ ist dreimal so breit wie ein „i“. Deshalb misst dieses Tool die tatsächliche Breite statt zu zählen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie lang darf eine Meta-Description sein?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Auf dem Desktop zeigt Google in der Regel etwa 920 Pixel (rund 150 bis 160 Zeichen), auf dem Smartphone bis zu 1.300 Pixel (rund 120 bis 130 Zeichen pro Zeile über mehrere Zeilen). Alles darüber wird mit „…“ abgeschnitten. Die wichtigste Aussage gehört deshalb in die ersten 100 Zeichen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum zeigt Google manchmal einen anderen Title als den, den ich eingetragen habe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Google schreibt Titles seit 2021 um, wenn sie zu lang, zu generisch, mit Keywords vollgestopft oder nicht zum Seiteninhalt passend sind. Dann nutzt Google die H1, Ankertexte oder andere Textteile. Ein Title, der in die Pixelgrenze passt, das Thema klar benennt und zur H1 passt, wird fast immer unverändert übernommen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist die Meta-Description ein Rankingfaktor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein, direkt nicht. Sie beeinflusst aber die Klickrate in den Suchergebnissen – und die entscheidet, wie viel Traffic ein Ranking tatsächlich bringt. Eine gute Description nennt den Nutzen, enthält den Suchbegriff (Google fettet ihn) und endet mit einem Grund zum Klicken."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie genau ist die Vorschau?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das Tool misst die Textbreite mit derselben Schriftart und Größe, die Google in den Suchergebnissen verwendet, und wendet die bekannten Grenzwerte an. Google variiert die Darstellung je nach Gerät, Sprache, Sitelinks und Suchanfrage leicht – die Vorschau ist deshalb ein sehr guter Richtwert, keine Garantie auf den Pixel."
+      }
+    }
+  ]
+}
+  </script>
+  <script>
+    (function(){
+      if (location.hostname !== 'judeu102.github.io') return;
+      var base = '/julian-deutsch-website';
+      function fix(){
+        document.querySelectorAll('a[href^="/"]:not([href^="//"])').forEach(function(a){
+          var h = a.getAttribute('href');
+          if (h && !h.startsWith(base + '/') && h !== base) a.setAttribute('href', base + h);
+        });
+        document.querySelectorAll('img[src^="/"]:not([src^="//"]), link[href^="/"]:not([href^="//"])').forEach(function(el){
+          var attr = el.hasAttribute('src') ? 'src' : 'href';
+          var v = el.getAttribute(attr);
+          if (v && !v.startsWith(base + '/') && v !== base) el.setAttribute(attr, base + v);
+        });
+      }
+      if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fix);
+      else fix();
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <a href="/" class="logo">Julian Deutsch</a>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Leistungen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-beratung/">SEO Beratung</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/chatgpt-ads/">ChatGPT Ads</a><a href="/prozessautomatisierung/">Prozessautomatisierung</a><a href="/local-seo-essen/">Local SEO Essen</a></div>
+          </li>
+          <li class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Regionen <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg></button>
+            <div class="nav-dropdown-menu"><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-freelancer-essen/">SEO Freelancer Essen</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+          </li>
+          <li><a href="/ueber-mich/">Über mich</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/glossar/">Glossar</a></li>
+          <li><a href="/tools/">Tools</a></li>
+          <li><a href="/kontakt/">Kontakt</a></li>
+        </ul>
+        <a href="/kontakt/" class="btn btn-primary">Projekt besprechen</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+    <div class="nav-mobile" id="navMobile">
+      <details class="nav-mobile-group">
+        <summary>Leistungen</summary>
+        <a href="/seo-freelancer/">SEO Freelancer</a>
+        <a href="/seo-berater/">SEO-Berater</a>
+        <a href="/seo-beratung/">SEO Beratung</a>
+        <a href="/seo-experte/">SEO Experte</a>
+        <a href="/seo-texte/">SEO Texte</a>
+        <a href="/seo-copywriting/">SEO Copywriting</a>
+        <a href="/freelancer-suchmaschinenoptimierung/">Suchmaschinenoptimierung</a>
+        <a href="/ki-seo-geo/">KI &amp; GEO</a>
+        <a href="/chatgpt-ads/">ChatGPT Ads</a>
+        <a href="/prozessautomatisierung/">Prozessautomatisierung</a>
+      </details>
+      <details class="nav-mobile-group">
+        <summary>Regionen</summary>
+        <a href="/seo-essen/">SEO Essen</a>
+        <a href="/local-seo-essen/">Local SEO Essen</a>
+        <a href="/seo-freelancer-essen/">SEO Freelancer Essen</a>
+        <a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a>
+        <a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a>
+        <a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a>
+        <a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a>
+      </details>
+      <a href="/ueber-mich/">Über mich</a>
+      <a href="/referenzen/">Referenzen</a>
+      <a href="/blog/">Blog</a>
+      <a href="/glossar/">Glossar</a>
+      <a href="/tools/">Tools</a>
+      <a href="/kontakt/">Kontakt</a>
+      <a href="/kontakt/" class="btn btn-primary" style="margin-top:16px;text-align:center;">Projekt besprechen</a>
+    </div>
+
+  <div class="breadcrumb">
+    <div class="container">
+      <a href="/">Start</a><span class="breadcrumb-sep">/</span><a href="/tools/">SEO-Tools</a><span class="breadcrumb-sep">/</span><span>SERP-Snippet-Vorschau</span>
+    </div>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero-content">
+        <span class="kicker">Kostenloses SEO-Tool</span>
+        <h1>SERP-Snippet-Vorschau: Title und Meta-Description testen</h1>
+        <p class="page-hero-text">Sieh, wie dein Suchergebnis bei Google aussieht – auf Desktop und Smartphone. Das Tool misst die Pixelbreite statt Zeichen zu zählen und warnt, bevor Google abschneidet. Ohne Anmeldung, ohne Speicherung: Alles läuft in deinem Browser.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tool-section">
+    <div class="container">
+      <div class="tool-grid">
+        <form class="tool-form" id="snippetForm" autocomplete="off" onsubmit="return false">
+          <div class="form-group">
+            <label for="tTitle">Title-Tag <span class="tool-meter" id="mTitle"></span></label>
+            <input type="text" id="tTitle" maxlength="120" placeholder="SEO Freelancer aus Essen – Strategie, Content & KI | Julian Deutsch">
+            <div class="tool-bar"><span id="bTitle"></span></div>
+          </div>
+          <div class="form-group">
+            <label for="tDesc">Meta-Description <span class="tool-meter" id="mDesc"></span></label>
+            <textarea id="tDesc" rows="3" maxlength="320" placeholder="Als SEO Freelancer sorge ich für Rankings, die Anfragen bringen. Strategie, Texte, Technik – persönlich und ohne Agentur-Overhead."></textarea>
+            <div class="tool-bar"><span id="bDesc"></span></div>
+          </div>
+          <div class="form-group">
+            <label for="tUrl">URL</label>
+            <input type="url" id="tUrl" placeholder="https://juliandeutsch.de/seo-freelancer/">
+          </div>
+          <div class="form-group">
+            <label for="tKw">Suchbegriff <span class="optional">(optional, wird wie bei Google fett markiert)</span></label>
+            <input type="text" id="tKw" maxlength="60" placeholder="SEO Freelancer">
+          </div>
+          <div class="tool-hints" id="hints" aria-live="polite"></div>
+        </form>
+
+        <div class="tool-preview">
+          <div class="tool-tabs" role="tablist">
+            <button type="button" class="tool-tab is-active" data-view="desktop" role="tab" aria-selected="true">Desktop</button>
+            <button type="button" class="tool-tab" data-view="mobile" role="tab" aria-selected="false">Smartphone</button>
+          </div>
+          <div class="serp serp-desktop" id="serp">
+            <div class="serp-site">
+              <span class="serp-favicon" aria-hidden="true">J</span>
+              <div><div class="serp-name" id="pName">juliandeutsch.de</div><div class="serp-url" id="pUrl">https://juliandeutsch.de › seo-freelancer</div></div>
+            </div>
+            <div class="serp-title" id="pTitle">SEO Freelancer aus Essen – Strategie, Content &amp; KI | Julian Deutsch</div>
+            <div class="serp-desc" id="pDesc">Als SEO Freelancer sorge ich für Rankings, die Anfragen bringen. Strategie, Texte, Technik – persönlich und ohne Agentur-Overhead.</div>
+          </div>
+          <p class="tool-note">Richtwerte: Title ≤ 580 px (Desktop) / ≤ 920 px (Mobil), Description ≤ 920 px (Desktop) / ≤ 1.300 px (Mobil). Gemessen in Googles Schriftgrößen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="article-detail">
+    <div class="container">
+      <div class="article-content" style="max-width: 820px; margin: 0 auto;">
+        <h2 id="warum">Warum Pixel statt Zeichen zählen</h2>
+        <p>Die meisten Ratgeber nennen „maximal 60 Zeichen“ für den Title und „maximal 160 Zeichen“ für die Description. Das ist eine Faustregel, keine Regel: Google rendert Suchergebnisse in einer Proportionalschrift, und dort ist ein „W“ etwa dreimal so breit wie ein „i“. Ein Title mit 58 Zeichen voller breiter Buchstaben wird abgeschnitten, einer mit 68 schmalen passt. Entscheidend ist die <strong>Breite in Pixeln</strong>, und genau die misst dieses Tool – mit derselben Schriftart und Größe, die Google verwendet.</p>
+
+        <h2 id="title">So schreibst du einen Title, der klickt und rankt</h2>
+        <ul>
+          <li><strong>Hauptkeyword nach vorn.</strong> Was vorne steht, wird gelesen und gewichtet. Mehr dazu im Glossar unter <a href="/glossar/title-tag/">Title-Tag</a>.</li>
+          <li><strong>Nutzen oder Unterscheidung dahinter.</strong> „SEO Beratung“ ist das Keyword, „Audit, Strategie, Umsetzung aus einer Hand“ ist der Grund zu klicken.</li>
+          <li><strong>Marke am Ende.</strong> Mit „|“ oder „–“ getrennt. Wird sie abgeschnitten, ist nichts verloren.</li>
+          <li><strong>Zur H1 passen.</strong> Weichen Title und Überschrift stark voneinander ab, schreibt Google den Title oft um.</li>
+          <li><strong>Einzigartig auf der Website.</strong> Zwei Seiten mit demselben Title konkurrieren um dasselbe Keyword.</li>
+        </ul>
+
+        <h2 id="description">So schreibst du eine Description, die Klicks bringt</h2>
+        <ul>
+          <li><strong>Kernaussage in die ersten 100 Zeichen.</strong> Auf dem Smartphone sieht man oft nicht mehr.</li>
+          <li><strong>Suchbegriff einbauen.</strong> Google fettet ihn im Snippet – das zieht das Auge. Probiere es oben mit dem Feld „Suchbegriff“.</li>
+          <li><strong>Konkret statt generisch.</strong> „Persönlich, ohne Agentur-Overhead, Erstgespräch kostenlos“ schlägt „Wir bieten professionelle Lösungen“.</li>
+          <li><strong>Handlungsaufforderung zum Schluss.</strong> Ein Verb am Ende: anfragen, vergleichen, herunterladen.</li>
+          <li><strong>Keine Garantie auf Anzeige.</strong> Passt die Description nicht zur Suchanfrage, baut Google ein eigenes Snippet aus dem Seitentext. Details im Glossar unter <a href="/glossar/meta-description/">Meta-Description</a>.</li>
+        </ul>
+
+        <h2 id="datenschutz">Datenschutz</h2>
+        <p>Alle Eingaben bleiben in deinem Browser. Nichts wird an einen Server gesendet oder gespeichert. Das Tool nutzt keine Cookies.</p>
+        <p>Du willst, dass jemand Titles und Descriptions für deine gesamte Website überarbeitet? Das ist Teil meiner Arbeit als <a href="/seo-freelancer/">SEO Freelancer</a> – oder als Baustein einer <a href="/seo-beratung/">SEO Beratung</a> mit Audit.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker">FAQ</span>
+        <h2>Häufige Fragen zu Title-Länge und Meta-Description</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item"><summary class="faq-question">Wie lang darf ein Title-Tag sein?</summary><div class="faq-answer"><p>Google schneidet Titles nicht nach Zeichen, sondern nach Pixelbreite ab: auf dem Desktop bei etwa 580 Pixeln, auf dem Smartphone bei etwa 920 Pixeln über zwei Zeilen. Das entspricht grob 55 bis 65 Zeichen, hängt aber stark von den Buchstaben ab – ein „W“ ist dreimal so breit wie ein „i“. Deshalb misst dieses Tool die tatsächliche Breite statt zu zählen.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Wie lang darf eine Meta-Description sein?</summary><div class="faq-answer"><p>Auf dem Desktop zeigt Google in der Regel etwa 920 Pixel (rund 150 bis 160 Zeichen), auf dem Smartphone bis zu 1.300 Pixel (rund 120 bis 130 Zeichen pro Zeile über mehrere Zeilen). Alles darüber wird mit „…“ abgeschnitten. Die wichtigste Aussage gehört deshalb in die ersten 100 Zeichen.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Warum zeigt Google manchmal einen anderen Title als den, den ich eingetragen habe?</summary><div class="faq-answer"><p>Google schreibt Titles seit 2021 um, wenn sie zu lang, zu generisch, mit Keywords vollgestopft oder nicht zum Seiteninhalt passend sind. Dann nutzt Google die H1, Ankertexte oder andere Textteile. Ein Title, der in die Pixelgrenze passt, das Thema klar benennt und zur H1 passt, wird fast immer unverändert übernommen.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Ist die Meta-Description ein Rankingfaktor?</summary><div class="faq-answer"><p>Nein, direkt nicht. Sie beeinflusst aber die Klickrate in den Suchergebnissen – und die entscheidet, wie viel Traffic ein Ranking tatsächlich bringt. Eine gute Description nennt den Nutzen, enthält den Suchbegriff (Google fettet ihn) und endet mit einem Grund zum Klicken.</p></div></details>
+        <details class="faq-item"><summary class="faq-question">Wie genau ist die Vorschau?</summary><div class="faq-answer"><p>Das Tool misst die Textbreite mit derselben Schriftart und Größe, die Google in den Suchergebnissen verwendet, und wendet die bekannten Grenzwerte an. Google variiert die Darstellung je nach Gerät, Sprache, Sitelinks und Suchanfrage leicht – die Vorschau ist deshalb ein sehr guter Richtwert, keine Garantie auf den Pixel.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  (function(){
+    var LIM={desktop:{title:580,desc:920},mobile:{title:920,desc:1300}};
+    var FONT={title:'20px Arial, sans-serif',desc:'14px Arial, sans-serif'};
+    var view='desktop';
+    var cv=document.createElement('canvas').getContext('2d');
+    function width(t,f){cv.font=f;return Math.round(cv.measureText(t).width);}
+    var $=function(id){return document.getElementById(id);};
+    var inT=$('tTitle'),inD=$('tDesc'),inU=$('tUrl'),inK=$('tKw');
+    function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+    function bold(s,kw){s=esc(s); if(!kw.trim()) return s; var re=new RegExp('('+kw.trim().replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+')','gi'); return s.replace(re,'<b>$1</b>');}
+    function truncate(t,f,lim){ if(width(t,f)<=lim) return {t:t,cut:false}; var w=t.split(' '); while(w.length&&width(w.join(' ')+' …',f)>lim) w.pop(); return {t:w.join(' ')+' …',cut:true}; }
+    function fmtUrl(u){ try{ var x=new URL(u); var p=x.pathname.replace(/\/$/,'').split('/').filter(Boolean); return {host:x.hostname.replace(/^www\./,''), crumb:x.origin.replace(/^https?:\/\/(www\.)?/,'https://')+(p.length?' › '+p.join(' › '):'')}; }catch(e){ return {host:'beispiel.de',crumb:'https://beispiel.de'}; } }
+    function meter(el,bar,w,lim,label){ var pct=Math.min(100,Math.round(w/lim*100)); el.textContent=w+' / '+lim+' px'; el.className='tool-meter '+(w>lim?'is-over':pct>90?'is-warn':'is-ok'); bar.style.width=pct+'%'; bar.className=(w>lim?'is-over':pct>90?'is-warn':'is-ok'); }
+    function render(){
+      var t=inT.value||inT.placeholder, d=inD.value||inD.placeholder, u=inU.value||inU.placeholder, k=inK.value;
+      var lim=LIM[view], wt=width(t,FONT.title), wd=width(d,FONT.desc);
+      var rt=truncate(t,FONT.title,lim.title), rd=truncate(d,FONT.desc,lim.desc);
+      $('pTitle').innerHTML=bold(rt.t,k); $('pDesc').innerHTML=bold(rd.t,k);
+      var fu=fmtUrl(u); $('pUrl').textContent=fu.crumb; $('pName').textContent=fu.host; document.querySelector('.serp-favicon').textContent=fu.host.charAt(0).toUpperCase();
+      meter($('mTitle'),$('bTitle'),wt,lim.title); meter($('mDesc'),$('bDesc'),wd,lim.desc);
+      var h=[];
+      if(!inT.value) h.push(['info','Trage deinen Title ein – die Vorschau zeigt gerade ein Beispiel.']);
+      if(rt.cut) h.push(['warn','Title wird auf '+(view==='desktop'?'Desktop':'Smartphone')+' abgeschnitten ('+wt+' px, erlaubt '+lim.title+' px).']);
+      if(inT.value&&wt<300) h.push(['info','Title ist sehr kurz – Platz für Nutzen oder Marke.']);
+      if(rd.cut) h.push(['warn','Description wird abgeschnitten ('+wd+' px, erlaubt '+lim.desc+' px). Wichtigstes nach vorn.']);
+      if(inD.value&&wd<400) h.push(['info','Description ist kurz – Google ergänzt dann oft eigenen Text von der Seite.']);
+      if(k.trim()){ if(!t.toLowerCase().includes(k.trim().toLowerCase())) h.push(['warn','Suchbegriff fehlt im Title.']); if(!d.toLowerCase().includes(k.trim().toLowerCase())) h.push(['info','Suchbegriff fehlt in der Description – Google fettet ihn sonst nicht.']); }
+      if(inT.value&&inD.value&&!rt.cut&&!rd.cut&&(!k.trim()||t.toLowerCase().includes(k.trim().toLowerCase()))) h.push(['ok','Passt: Nichts wird abgeschnitten.']);
+      $('hints').innerHTML=h.map(function(x){return '<div class="tool-hint is-'+x[0]+'">'+esc(x[1])+'</div>';}).join('');
+    }
+    [inT,inD,inU,inK].forEach(function(i){i.addEventListener('input',render);});
+    document.querySelectorAll('.tool-tab').forEach(function(b){b.addEventListener('click',function(){view=b.dataset.view; document.querySelectorAll('.tool-tab').forEach(function(x){x.classList.toggle('is-active',x===b);x.setAttribute('aria-selected',x===b);}); $('serp').className='serp serp-'+view; render();});});
+    document.fonts&&document.fonts.ready.then(render); render();
+  })();
+  </script>
+
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>SEO-Beratung beginnt mit einem Gespräch</h2>
+      <p>30 Minuten Erstgespräch, kostenlos, unverbindlich. Wir klären, ob ich der richtige Partner für dein Unternehmen bin.</p>
+      <div class="cta-banner-buttons">
+        <a href="tel:+491736133430" class="btn btn-primary btn-arrow">📞 Jetzt anrufen</a>
+        <a href="/kontakt/" class="btn btn-secondary btn-light">Kontaktformular</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a href="/" class="logo" style="color:#fff;">Julian Deutsch</a><p>SEO- &amp; KI-Experte aus Essen mit journalistischem Background – für Unternehmen, die mit starkem Content und modernen Prozessen sichtbarer werden wollen.</p></div>
+        <div class="footer-col"><h4>Leistungen</h4><a href="/seo-freelancer/">SEO Freelancer</a><a href="/freelancer-suchmaschinenoptimierung/">Freelancer Suchmaschinenoptimierung</a><a href="/seo-berater/">SEO-Berater</a><a href="/seo-beratung/">SEO Beratung</a><a href="/seo-experte/">SEO Experte</a><a href="/seo-texte/">SEO Texte</a><a href="/seo-copywriting/">SEO Copywriting</a><a href="/ki-seo-geo/">KI &amp; GEO</a><a href="/chatgpt-ads/">ChatGPT Ads</a><a href="/prozessautomatisierung/">Prozessautomatisierung</a><a href="/local-seo-essen/">Local SEO Essen</a></div><div class="footer-col"><h4>Regionen</h4><a href="/seo-freelancer-nrw/">SEO Freelancer NRW</a><a href="/seo-essen/">SEO Essen</a><a href="/seo-freelancer-koeln/">SEO Freelancer Köln</a><a href="/seo-freelancer-duesseldorf/">SEO Freelancer Düsseldorf</a><a href="/seo-freelancer-dortmund/">SEO Freelancer Dortmund</a></div>
+        <div class="footer-col"><h4>Mehr</h4><a href="/ueber-mich/">Über mich</a><a href="/blog/">Blog</a><a href="/glossar/">Glossar</a><a href="/tools/">Tools</a><a href="/kontakt/">Kontakt</a></div>
+        <div class="footer-col"><h4>Kontakt</h4><a href="mailto:kontakt@juliandeutsch.de">kontakt@juliandeutsch.de</a><a href="tel:+491736133430">+49 (0) 173 6133430</a></div>
+      </div>
+      <div class="footer-bottom"><span>&copy; 2026 Julian Deutsch. Alle Rechte vorbehalten.</span><div class="footer-legal"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a><a href="#" data-consent-open>Cookie-Einstellungen</a></div></div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 10); });
+    const navToggle = document.getElementById('navToggle');
+    const navMobile = document.getElementById('navMobile');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMobile.classList.toggle('open');
+      document.body.classList.toggle('nav-open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const spans = navToggle.querySelectorAll('span');
+      spans[0].style.transform = isOpen ? 'rotate(45deg) translate(5px, 5px)' : '';
+      spans[1].style.opacity = isOpen ? '0' : '';
+      spans[2].style.transform = isOpen ? 'rotate(-45deg) translate(5px, -5px)' : '';
+    });
+    document.querySelectorAll('.nav-mobile a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMobile.classList.remove('open');
+        document.body.classList.remove('nav-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        const spans = navToggle.querySelectorAll('span');
+        spans[0].style.transform = '';
+        spans[1].style.opacity = '';
+        spans[2].style.transform = '';
+      });
+    });
+  </script>
+  <script src="/consent.js" defer></script>
+</body>
+</html>

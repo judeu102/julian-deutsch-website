@@ -88,3 +88,5 @@
 - https://juliandeutsch.de/glossar/nap/ – Name, Address, Phone fuer Local SEO
 - https://juliandeutsch.de/glossar/prompt/ – Anweisung an ein KI-Sprachmodell
 - https://juliandeutsch.de/blog/query-fan-out-analyse/ – Query Fan-Out-Analyse: Wie KI-Suche Anfragen in Teilfragen zerlegt und wie man Inhalte dafür baut (Anleitung, Beispiel)
+- https://juliandeutsch.de/tools/ – Kostenlose SEO-Tools im Browser
+- https://juliandeutsch.de/tools/serp-snippet-vorschau/ – SERP-Snippet-Vorschau: Title und Meta-Description mit Pixelmessung testen
