@@ -3730,24 +3730,7 @@ h1 {
   z-index: 1;
 }
 
-/* --- Scroll-Reveal: CSS-only (Scroll-Driven Animations) --- */
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .service-card,
-    .blog-card,
-    .detail-card,
-    .target-card,
-    .related-article-card,
-    .process-step,
-    .why-item,
-    .advantage-item,
-    .testimonial-card {
-      animation: reveal-up 0.7s var(--ease-out) both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 34%;
-    }
-  }
-}
+/* Scroll-Reveal: siehe motion.js + Block MOTION am Dateiende */
 
 @keyframes reveal-up {
   from {
@@ -4202,3 +4185,96 @@ h1 {
 
 .page-visual .ai-label { display: inline-block; margin-left: 6px; font-size: .75rem; color: var(--color-subtext); opacity: .75; letter-spacing: .01em; }
 .page-visual .ai-label::before { content: "· "; }
+
+
+/* ==================== HERO MIT BILD (Overlay + Hover) ==================== */
+.hero-visual { position: relative; overflow: hidden; isolation: isolate; display: flex; align-items: center; min-height: clamp(480px, 62vh, 660px); padding: 72px 0; border-bottom: 0; --mx: 0px; --my: 0px; }
+.hero-visual > .container { position: relative; z-index: 2; width: 100%; }
+.hero-media { position: absolute; inset: 0; z-index: 0; overflow: hidden; }
+.hero-media-img { position: absolute; top: -4%; left: -4%; width: 108%; height: 108%; object-fit: cover; object-position: 72% center; transform: translate3d(var(--mx), var(--my), 0) scale(1.02); transition: transform 1.6s cubic-bezier(.16,.84,.24,1), filter .9s ease; will-change: transform; }
+.hero-media::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.94) 32%, rgba(255,255,255,.72) 46%, rgba(255,255,255,.18) 64%, rgba(255,255,255,0) 76%); }
+.hero-media::before { content: ""; position: absolute; inset: -20% -40%; z-index: 1; pointer-events: none; opacity: 0;
+  background: linear-gradient(115deg, transparent 42%, rgba(255,255,255,.38) 50%, transparent 58%); transform: translateX(-60%); }
+.hero-visual:hover .hero-media-img { transform: translate3d(var(--mx), var(--my), 0) scale(1.08); filter: saturate(1.18) contrast(1.04); }
+.hero-visual:hover .hero-media::before { animation: hero-sheen 1.6s cubic-bezier(.4,0,.2,1) 1; }
+@keyframes hero-sheen { 0% { opacity: 0; transform: translateX(-60%); } 15% { opacity: 1; } 100% { opacity: 0; transform: translateX(60%); } }
+.hero-visual h1 { text-wrap: balance; }
+.hero-ai { position: absolute; right: 16px; bottom: 14px; z-index: 3; font-size: .72rem; line-height: 1; padding: 6px 10px; border-radius: 999px; color: var(--color-subtext); background: rgba(255,255,255,.72); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,.6); }
+@media (max-width: 860px) {
+  .hero-visual { display: block; min-height: 0; padding: 0 0 40px; }
+  .hero-media { position: relative; inset: auto; height: 58vw; max-height: 400px; }
+  .hero-media-img { top: 0; left: 0; width: 100%; height: 100%; object-position: center; transform: none; }
+  .hero-media::after { background: linear-gradient(180deg, rgba(255,255,255,0) 45%, rgba(255,255,255,.85) 82%, #fff 100%); }
+  .hero-visual > .container { margin-top: -40px; }
+  .hero-ai { top: 12px; bottom: auto; right: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-media-img, .hero-visual:hover .hero-media-img { transition: none; transform: none; }
+  .hero-visual:hover .hero-media::before { animation: none; }
+}
+
+
+/* ==================== MOTION (motion.js) ==================== */
+/* Hero: gestaffelter Einstieg + sanfter Bild-Zoom beim Laden */
+@media (prefers-reduced-motion: no-preference) {
+  .page-hero-content > *, .article-hero .page-hero-content > * { animation: m-rise .8s var(--ease-out) both; }
+  .page-hero-content > :nth-child(1) { animation-delay: .05s; }
+  .page-hero-content > :nth-child(2) { animation-delay: .14s; }
+  .page-hero-content > :nth-child(3) { animation-delay: .23s; }
+  .page-hero-content > :nth-child(4) { animation-delay: .32s; }
+  .page-hero-content > :nth-child(5) { animation-delay: .40s; }
+  .hero-media-img { animation: m-settle 1.8s var(--ease-out) backwards; }
+  .hero-ai { animation: m-fade .6s ease 1s both; }
+}
+@keyframes m-rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes m-settle { from { transform: scale(1.12); } to { transform: translate3d(var(--mx), var(--my), 0) scale(1.02); } }
+@keyframes m-fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Scroll-Reveal (nur mit JS aktiv) */
+.js-motion-ready .reveal:not(.is-in) { opacity: 0; }
+.js-motion .reveal.is-in { animation: m-reveal .75s var(--ease-out) backwards; animation-delay: calc(var(--i, 0) * 80ms); }
+@keyframes m-reveal { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+.js-motion .advantage-item.reveal.is-in .advantage-number { animation: m-pop .7s var(--ease-spring) both; animation-delay: calc(var(--i, 0) * 80ms + .15s); }
+@keyframes m-pop { 0% { transform: scale(.6); opacity: 0; } 100% { transform: none; opacity: 1; } }
+
+/* Kicker: Linie zeichnet sich beim Einblenden */
+.section-header .kicker, .page-hero-content .kicker { position: relative; }
+.js-motion .section-header.reveal .kicker::after { content: ""; position: absolute; left: 0; bottom: -6px; height: 2px; width: 28px; background: currentColor; border-radius: 2px; transform: scaleX(0); transform-origin: left; transition: transform .7s var(--ease-out) .25s; }
+.js-motion .section-header.reveal.is-in .kicker::after { transform: scaleX(1); }
+.js-motion .section-header.reveal .kicker::after { left: 50%; margin-left: -14px; transform-origin: center; }
+
+/* Karten: Spotlight folgt der Maus + Icon-Bewegung */
+.spot { position: relative; isolation: isolate; }
+.spot::before { content: ""; position: absolute; inset: 0; border-radius: inherit; pointer-events: none; z-index: -1; opacity: 0; transition: opacity .35s ease;
+  background: radial-gradient(420px circle at var(--sx, 50%) var(--sy, 50%), rgba(30, 64, 175, .09), transparent 60%); }
+.spot:hover::before { opacity: 1; }
+.spot:hover { border-color: rgba(30, 64, 175, .28); }
+.detail-icon, .service-icon, .why-item-icon { transition: transform .45s var(--ease-spring); }
+.detail-card:hover .detail-icon, .service-card:hover .service-icon { transform: rotate(-8deg) scale(1.12); }
+.why-item:hover .why-item-icon { transform: scale(1.18); }
+
+/* Buttons: Lichtschimmer */
+.btn-primary { position: relative; overflow: hidden; isolation: isolate; }
+.btn-primary::before { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 45%; pointer-events: none;
+  background: linear-gradient(110deg, transparent, rgba(255, 255, 255, .28), transparent); transform: skewX(-18deg); transition: left .75s var(--ease-out); }
+.btn-primary:hover::before { left: 120%; }
+
+/* Textlinks im Artikel: Unterstrich wächst */
+.article-content p a, .article-content li a, .glossar-content p a, .glossar-content li a {
+  text-decoration: none; background-image: linear-gradient(currentColor, currentColor); background-size: 100% 1px; background-position: 0 100%; background-repeat: no-repeat;
+  transition: background-size .35s var(--ease-out), color .2s ease; }
+.article-content p a:hover, .article-content li a:hover, .glossar-content p a:hover, .glossar-content li a:hover { background-size: 100% 2px; color: #1E40AF; }
+
+/* Lese-Fortschritt */
+.read-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 1001; transform-origin: 0 50%; transform: scaleX(0);
+  background: linear-gradient(90deg, #1E40AF, #0B1D3A); pointer-events: none; }
+
+/* Logos: Hover-Pause im Laufband */
+.logos-marquee:hover .logos-track { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .js-motion-ready .reveal:not(.is-in) { opacity: 1; }
+  .js-motion .reveal.is-in { animation: none; }
+  .btn-primary::before, .spot::before, .read-progress { display: none; }
+}
