@@ -4199,3 +4199,6 @@ h1 {
 .tool-note { font-size: .8125rem; color: var(--color-subtext); margin-top: 12px; }
 .target-card.is-soon { opacity: .6; }
 @media (max-width: 900px) { .tool-grid { grid-template-columns: 1fr; gap: 28px; } .tool-preview { position: static; } }
+
+.page-visual .ai-label { display: inline-block; margin-left: 6px; font-size: .75rem; color: var(--color-subtext); opacity: .75; letter-spacing: .01em; }
+.page-visual .ai-label::before { content: "· "; }
