@@ -90,3 +90,5 @@
 - https://juliandeutsch.de/blog/query-fan-out-analyse/ – Query Fan-Out-Analyse: Wie KI-Suche Anfragen in Teilfragen zerlegt und wie man Inhalte dafür baut (Anleitung, Beispiel)
 - https://juliandeutsch.de/tools/ – Kostenlose SEO-Tools im Browser
 - https://juliandeutsch.de/tools/serp-snippet-vorschau/ – SERP-Snippet-Vorschau: Title und Meta-Description mit Pixelmessung testen
+- https://juliandeutsch.de/blog/seo-texte-schreiben/ – SEO-Texte schreiben: Anleitung in neun Schritten mit Checkliste
+- https://juliandeutsch.de/blog/aida-formel/ – AIDA-Formel und Copywriting-Formeln (PAS, BAB, 4P, FAB) mit Beispielen
