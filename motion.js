@@ -14,7 +14,7 @@
   var SEL = [
     '.section-header', '.service-card', '.blog-card', '.detail-card', '.target-card',
     '.insight-card', '.related-article-card', '.why-item', '.advantage-item',
-    '.testimonial-card', '.faq-item', '.glossary-category', '.trust-item',
+    '.testimonial-card', '.gr-card', '.gr-summary', '.faq-item', '.glossary-category', '.trust-item',
     '.process-step', '.logo-item', '.author-box', '.service-infobox', '.service-toc',
     '.article-toc', '.article-content > h2', '.article-content > .table-wrap',
     '.cta-banner .container', '.tool-preview', '.tool-form', '.glossar-aside-card',

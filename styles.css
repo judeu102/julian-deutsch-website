@@ -4278,3 +4278,22 @@ h1 {
   .js-motion .reveal.is-in { animation: none; }
   .btn-primary::before, .spot::before, .read-progress { display: none; }
 }
+
+
+/* ==================== GOOGLE-BEWERTUNGEN ==================== */
+.google-reviews { margin-top: 56px; }
+.gr-summary { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; text-align: left; }
+.gr-score { font-size: 2.75rem; font-weight: 800; color: var(--color-primary); line-height: 1; }
+.gr-summary > div { display: flex; flex-direction: column; gap: 2px; }
+.gr-count { font-size: .875rem; color: var(--color-subtext); }
+.gr-stars { color: #F5B301; letter-spacing: 1px; }
+.gr-stars-lg { font-size: 1.2rem; }
+.gr-grid { columns: 3 300px; column-gap: 20px; max-width: 1080px; margin: 0 auto; }
+.gr-card { break-inside: avoid; margin: 0 0 20px; background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: 20px 22px; box-shadow: var(--shadow-sm); }
+.gr-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+.gr-avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--color-primary); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+.gr-name { display: block; font-style: normal; font-weight: 600; color: var(--color-primary); }
+.gr-meta { font-size: .8125rem; color: var(--color-subtext); }
+.gr-card blockquote { margin: 0; padding: 0; border: 0; font-size: .9375rem; line-height: 1.6; color: var(--color-text); }
+.gr-card blockquote p { margin: 0 0 10px; }
+.gr-card blockquote p:last-child { margin-bottom: 0; }
