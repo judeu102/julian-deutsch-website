@@ -18,7 +18,7 @@
     '.process-step', '.logo-item', '.author-box', '.service-infobox', '.service-toc',
     '.article-toc', '.article-content > h2', '.article-content > .table-wrap',
     '.cta-banner .container', '.tool-preview', '.tool-form', '.glossar-aside-card',
-    '.article-aside-card', '.automation-flow', '.kl-svg', '.stein-scene', '.case-chart'
+    '.article-aside-card', '.automation-flow', '.augenhoehe-head', '.augenhoehe-visual', '.kl-svg', '.stein-scene', '.case-chart'
   ].join(',');
   var els = Array.prototype.slice.call(document.querySelectorAll(SEL)).filter(function (el) {
     return !el.closest('.hero-visual, .page-hero, .article-hero, .logos-track');

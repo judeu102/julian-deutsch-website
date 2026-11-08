@@ -4297,3 +4297,24 @@ h1 {
 .gr-card blockquote { margin: 0; padding: 0; border: 0; font-size: .9375rem; line-height: 1.6; color: var(--color-text); }
 .gr-card blockquote p { margin: 0 0 10px; }
 .gr-card blockquote p:last-child { margin-bottom: 0; }
+
+
+/* ==================== AUF AUGENHOEHE MIT KI ==================== */
+.augenhoehe { background: radial-gradient(ellipse at 50% 55%, #0A2150 0%, #031636 55%, #01102C 100%); padding: var(--section-py) 0; color: #fff; overflow: hidden; }
+.augenhoehe-head { text-align: center; max-width: 720px; margin: 0 auto 36px; }
+.augenhoehe .kicker { background: none; -webkit-text-fill-color: #8FB0FF; color: #8FB0FF; }
+.augenhoehe h2 { color: #fff; margin-bottom: 16px; }
+.augenhoehe-head p { color: rgba(255,255,255,.78); font-size: 1.0625rem; line-height: 1.7; }
+.augenhoehe-visual { position: relative; margin: 0 auto; max-width: 1140px; border-radius: var(--radius-lg); overflow: hidden; isolation: isolate; }
+.augenhoehe-visual img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover;
+  -webkit-mask-image: radial-gradient(ellipse 72% 78% at 50% 50%, #000 62%, transparent 100%); mask-image: radial-gradient(ellipse 72% 78% at 50% 50%, #000 62%, transparent 100%);
+  transition: transform 1.4s cubic-bezier(.16,.84,.24,1), filter .8s ease; }
+.augenhoehe-visual::after { content: ""; position: absolute; left: 30%; right: 36%; top: 38%; height: 3px; border-radius: 3px; pointer-events: none; opacity: 0;
+  background: linear-gradient(90deg, transparent, rgba(160,195,255,.9), transparent); filter: blur(2px); transition: opacity .6s ease; }
+.augenhoehe-visual:hover img { transform: scale(1.04); filter: brightness(1.08) saturate(1.1); }
+.augenhoehe-visual:hover::after { opacity: 1; animation: ah-beam 1.8s ease-in-out infinite; }
+@keyframes ah-beam { 0%,100% { transform: scaleX(.6); opacity: .4; } 50% { transform: scaleX(1); opacity: 1; } }
+.augenhoehe-visual .hero-ai { bottom: 14px; right: 18px; color: rgba(255,255,255,.8); background: rgba(11,29,58,.55); border-color: rgba(255,255,255,.15); }
+.augenhoehe-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
+@media (max-width: 860px) { .augenhoehe-visual img { -webkit-mask-image: none; mask-image: none; } .augenhoehe-visual .hero-ai { top: 10px; bottom: auto; right: 10px; } }
+@media (prefers-reduced-motion: reduce) { .augenhoehe-visual img, .augenhoehe-visual:hover img { transition: none; transform: none; } .augenhoehe-visual:hover::after { animation: none; } }
