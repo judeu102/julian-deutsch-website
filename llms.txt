@@ -92,3 +92,4 @@
 - https://juliandeutsch.de/tools/serp-snippet-vorschau/ – SERP-Snippet-Vorschau: Title und Meta-Description mit Pixelmessung testen
 - https://juliandeutsch.de/blog/seo-texte-schreiben/ – SEO-Texte schreiben: Anleitung in neun Schritten mit Checkliste
 - https://juliandeutsch.de/blog/aida-formel/ – AIDA-Formel und Copywriting-Formeln (PAS, BAB, 4P, FAB) mit Beispielen
+- https://juliandeutsch.de/blog/seo-everywhere/ – SEO Everywhere: Sichtbarkeit auf Reddit, LinkedIn, YouTube, X und in KI-Antworten
