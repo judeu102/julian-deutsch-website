@@ -4318,3 +4318,8 @@ h1 {
 .augenhoehe-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px; }
 @media (max-width: 860px) { .augenhoehe-visual img { -webkit-mask-image: none; mask-image: none; } .augenhoehe-visual .hero-ai { top: 10px; bottom: auto; right: 10px; } }
 @media (prefers-reduced-motion: reduce) { .augenhoehe-visual img, .augenhoehe-visual:hover img { transition: none; transform: none; } .augenhoehe-visual:hover::after { animation: none; } }
+
+/* ===== ARTICLE NOTE ===== */
+.article-content .article-note { font-size: .92rem; color: var(--text-muted, #4a5568); background: #F4EFE6; border-left: 3px solid #1E40AF; padding: .8rem 1rem; border-radius: 0 8px 8px 0; }
+.article-content code { overflow-wrap: anywhere; word-break: break-word; }
+.article-layout > .article-content { min-width: 0; }
