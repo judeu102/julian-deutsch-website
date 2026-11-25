@@ -4323,3 +4323,14 @@ h1 {
 .article-content .article-note { font-size: .92rem; color: var(--text-muted, #4a5568); background: #F4EFE6; border-left: 3px solid #1E40AF; padding: .8rem 1rem; border-radius: 0 8px 8px 0; }
 .article-content code { overflow-wrap: anywhere; word-break: break-word; }
 .article-layout > .article-content { min-width: 0; }
+
+/* ===== ARTICLE FIGURE + KEYFACTS ===== */
+.article-content .article-figure { margin: 2rem 0; }
+.article-content .article-figure .figure-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; border-radius: 18px; }
+.article-content .article-figure svg { display: block; width: 100%; min-width: 640px; height: auto; }
+.article-content .article-figure figcaption { margin-top: 10px; font-size: .85rem; color: #55607a; }
+.article-content .article-keyfacts { background: #0B1D3A; color: #fff; border-radius: 16px; padding: 1.3rem 1.5rem; margin: 1.5rem 0; }
+.article-content .article-keyfacts h4 { color: #fff; margin: 0 0 .6rem; }
+.article-content .article-keyfacts ul { margin: 0; padding-left: 1.1rem; }
+.article-content .article-keyfacts li { color: #e6ebf5; margin: .3rem 0; }
+.article-content .article-keyfacts strong { color: #fff; }
