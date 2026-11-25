@@ -25,9 +25,9 @@
 
 | Keyword | Ziel-URL | Suchvolumen DE | Schwierigkeit | Status | Aktuelles Ranking | Ziel-Ranking | Notizen |
 |---|---|---|---|---|---|---|---|
-| seo essen | /seo-essen/ | TBD | mittel | geplant Mo. 3 | – | Top 3 + Local Pack | Hauptlokalziel |
-| seo freelancer essen | /seo-essen/ | TBD | niedrig–mittel | geplant Mo. 3 | – | Top 3 | Intent overlap |
-| seo agentur essen | /seo-essen/ | TBD | mittel | geplant Mo. 3 | – | Top 10 | im Body adressieren |
+| seo essen | /seo-freelancer-essen/ | TBD | mittel | geplant Mo. 3 | – | Top 3 + Local Pack | Hauptlokalziel |
+| seo freelancer essen | /seo-freelancer-essen/ | TBD | niedrig–mittel | geplant Mo. 3 | – | Top 3 | Intent overlap |
+| seo agentur essen | /seo-freelancer-essen/ | TBD | mittel | geplant Mo. 3 | – | Top 10 | im Body adressieren |
 | seo nrw | /seo-nrw/ | TBD | mittel | geplant Mo. 3 | – | Top 10 | |
 | seo freelancer nrw | /seo-nrw/ | TBD | mittel | geplant Mo. 3 | – | Top 5 | |
 | seo ruhrgebiet | /blog/seo-ruhrgebiet/ | TBD | niedrig | später (Mo. 6) | – | Top 5 | Quick-Win |
@@ -64,7 +64,7 @@
 | webdesign freelancer | /web-design/ | TBD | mittel | live Mo. 2 | – | Top 15 | |
 | seo webdesign | /web-design/ (sekundär) | TBD | niedrig | live Mo. 2 | – | Top 10 | USP-Verbindung |
 | conversion optimiertes webdesign | /blog/conversion-webdesign/ | TBD | niedrig | später (Mo. 6) | – | Top 10 | |
-| website erstellen lassen essen | /seo-essen/ (FAQ-Kontext) | TBD | niedrig | live Mo. 3 | – | Top 5 | lokal relevant |
+| website erstellen lassen essen | /seo-freelancer-essen/ (FAQ-Kontext) | TBD | niedrig | live Mo. 3 | – | Top 5 | lokal relevant |
 
 ---
 

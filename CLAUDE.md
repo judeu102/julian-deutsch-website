@@ -32,7 +32,8 @@ Bevor du Code schreibst, kläre mit Julian:
 /seo-copywriting/                 Service-Page
 /story-branding/                  Service-Page
 /web-design/                      Service-Page
-/seo-essen/                       Lokal-Landingpage (Local Pack-Ziel)
+/seo-freelancer-essen/            Lokal-Landingpage für „SEO Essen“ + „SEO Freelancer Essen“ (Local Pack-Ziel)
+/seo-essen/                       leitet seit 25.11.2026 auf /seo-freelancer-essen/ weiter (Kannibalisierung beendet) – nicht neu anlegen
 /seo-nrw/                         Regional-Landingpage
 /ueber-mich/                      E-E-A-T (Erfahrung, Expertise, Autorität, Trust)
 /cases/                           Case-Studies-Übersicht
@@ -107,7 +108,7 @@ Pflicht-Output im `<head>`:
 - **Title:** `Web Design mit SEO im Kern | Julian Deutsch`
 - **Description:** `Web Design, das schnell lädt, ranking-freundlich ist und deine Story trägt. Konzept, UX, Build, SEO – alles aus einer Hand.`
 
-### `/seo-essen/`
+### `/seo-essen/` (Inhalte jetzt auf `/seo-freelancer-essen/`)
 - **Title:** `SEO Essen: Sichtbar im Ruhrgebiet | Julian Deutsch`
 - **Description:** `SEO Essen für Unternehmen aus dem Ruhrgebiet. Lokale Sichtbarkeit, Google-Business-Optimierung, persönliche Beratung. Jetzt anfragen.`
 
@@ -162,7 +163,7 @@ Erzeuge eine Helper-Funktion `buildJsonLd(type, data)` und exportiere fertige Sc
 }
 ```
 
-### `LocalBusiness`-Markup auf `/seo-essen/`
+### `LocalBusiness`-Markup auf `/seo-freelancer-essen/` (früher `/seo-essen/`)
 ```json
 {
   "@context": "https://schema.org",
@@ -263,7 +264,7 @@ Lege in den Root:
 
 ## Kern-Inhalte
 - /seo-freelancer/  – Money-Page mit Leistungs- und Preis-Kontext
-- /seo-essen/       – Lokale Beratung im Ruhrgebiet
+- /seo-freelancer-essen/ – SEO Essen: lokale Beratung im Ruhrgebiet
 - /seo-copywriting/ – Service Copywriting
 - /story-branding/  – Service Story Branding
 - /web-design/      – Service Web Design
