@@ -312,8 +312,8 @@ Die Seite muss drei Dinge gleichzeitig leisten:
   - ✅ 11880.com + werkenntdenBESTEN.de (kostenlos, 26.11.2026, Branche SEO-Agentur – evtl. Rückruf zur Verifizierung, Gewerbeanmeldung bereithalten)
   - NAP überall: „Julian Deutsch – SEO Freelancer“, Heisinger Str. 389, 45259 Essen, 0173 6133430, kontakt@juliandeutsch.de
   - ⏳ ProvenExpert (Konto angelegt 26.11.2026, Bestätigungslink offen; 30 Tage Premium-Test → danach automatisch Free)
-  - ⏳ freelancermap (registriert 26.11.2026, Stammdaten + SEO-Profil noch offen)
-  - ⏳ malt (für 27.11.2026 geplant, mit CV; Tagessatz 400 €)
+  - ✅ freelancermap (live 26.11.2026: https://www.freelancermap.de/profil/julian-deutsch – Link auf juliandeutsch.de, 75 €/h, 600 €/Tag, verfügbar ab 01.01.2027; offen: CV, Projekthistorie, Abschluss)
+  - ⏳ malt (für 27.11.2026 geplant, mit CV; Tagessatz 600 €)
   - Bewusst NICHT gebucht: „Starteintrag“-Testabos (gehen nach 3 Monaten in 29,90 €/Monat über)
 - Plattformen: ProvenExpert, Trustpilot, Google Business, freelance.de, malt.de, freelancermap.de.
 - LinkedIn-Profil + Kontaktinfo verlinkt zur Domain.
