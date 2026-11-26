@@ -307,6 +307,11 @@ Die Seite muss drei Dinge gleichzeitig leisten:
 **Schnelle Wins (Monat 1–3)**
 - Branchenverzeichnisse: gelbeseiten.de, dasoertliche.de, branchenbuch-deutschland, ortsdienst.de, 11880, lokale Essener Verzeichnisse.
   - ✅ Yelp (angelegt 26.11.2026, Konto kontakt@juliandeutsch.de, Kategorien Marketing + Webdesign, Mo–Fr 9–18, wartet auf Moderation)
+  - ✅ Gelbe Seiten (Grundeintrag kostenlos, 26.11.2026, Branche Suchmaschinenoptimierung, Verlag Sutter Essen – Bestätigungslink per Mail)
+  - ✅ Das Örtliche (Grundeintrag kostenlos, 26.11.2026, Branche Suchmaschinenoptimierung – Bestätigungslink per Mail)
+  - ✅ 11880.com + werkenntdenBESTEN.de (kostenlos, 26.11.2026, Branche SEO-Agentur – evtl. Rückruf zur Verifizierung, Gewerbeanmeldung bereithalten)
+  - NAP überall: „Julian Deutsch – SEO Freelancer“, Heisinger Str. 389, 45259 Essen, 0173 6133430, kontakt@juliandeutsch.de
+  - Bewusst NICHT gebucht: „Starteintrag“-Testabos (gehen nach 3 Monaten in 29,90 €/Monat über)
 - Plattformen: ProvenExpert, Trustpilot, Google Business, freelance.de, malt.de, freelancermap.de.
 - LinkedIn-Profil + Kontaktinfo verlinkt zur Domain.
 
