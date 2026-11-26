@@ -306,6 +306,7 @@ Die Seite muss drei Dinge gleichzeitig leisten:
 
 **Schnelle Wins (Monat 1–3)**
 - Branchenverzeichnisse: gelbeseiten.de, dasoertliche.de, branchenbuch-deutschland, ortsdienst.de, 11880, lokale Essener Verzeichnisse.
+  - ✅ Yelp (angelegt 26.11.2026, Konto kontakt@juliandeutsch.de, Kategorien Marketing + Webdesign, Mo–Fr 9–18, wartet auf Moderation)
 - Plattformen: ProvenExpert, Trustpilot, Google Business, freelance.de, malt.de, freelancermap.de.
 - LinkedIn-Profil + Kontaktinfo verlinkt zur Domain.
 
